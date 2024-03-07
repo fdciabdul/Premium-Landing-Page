@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceMax - Customization</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- fonts and icons -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color-black.png" alt="brand-logo" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item active"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="chart.html" class="nav-link">Chart</a></li>
+                        <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li></li>
+
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="dropdown.html" class="nav-link">Dropdown Module</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player Buttons</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                            <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Template Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="template-options.html" class="nav-link">SpaceMax  template options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- =========== End of Right Sidebar ============ -->
+    <nav class="navbar navbar-light sidebar" id="sidebar">
+        <div class="inner">
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Attention</a>
+                    <nav class="nav nav-pills nav-pills--sub flex-column">
+                        <a class="nav-link ml-1" href="#item-1-1">SCSS User</a>
+                        <a class="nav-link ml-1" href="#item-1-2">CSS User</a>
+                    </nav>
+                <a class="nav-link" href="#item-2">Updating typeface</a>
+                    <nav class="nav nav-pills nav-pills--sub flex-column">
+                        <a class="nav-link ml-1" href="#item-2-1">From SCSS</a>
+                        <a class="nav-link ml-1" href="#item-2-2">From CSS</a>
+                    </nav>
+                <a class="nav-link" href="#item-3">Updating color</a>
+                    <nav class="nav nav-pills nav-pills--sub flex-column">
+                        <a class="nav-link ml-1" href="#item-3-1">Using pre-defined Color</a>
+                        <a class="nav-link ml-1" href="#item-3-2">From SCSS</a>
+                        <a class="nav-link ml-1" href="#item-3-3">From CSS</a>
+                    </nav>
+            </nav>
+        </div>
+    </nav>
+    <!-- =========== End of Right Sidebar ============ -->
+
+    <!-- =========== End of Sidebar ============ -->
+    <main class="main documentation section--light">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1">
+                        <!-- Getting started -->
+                        <div class="content-title mb-3 pb-3 border-bottom">
+                            <h1 class="h3-font mb-1">Customization</h1>
+                            <p class="lead font-w--400">Learn how to create your own style without changing the theme’s core files so you can take advantage of future updates.</p>
+                        </div>
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-1">
+                            <h3 class="pb-2 h4-font">Get attention</h3>
+                            <div class="card p-4 mb-4" id="item-1-1">
+                                <h3 class="pb-2 h6-font">For SCSS user:</h3>
+                                <p>It's highly recommended that all the customized styles to be stored only within the
+                                    <code>5-user</code> folder from the scss folder so you can update this theme anytime with no effort. When you update SpaceMax, make sure you backup your <code>5-user</code> folder, that may contain styles you have created
+                                    already.</p>
+                                <br>
+                                <p class="lead font-w--500 mb-2"><code>scss/5-user</code> folder and its files are dedicated for custom edit and additions.
+                                </p>
+
+                                <p class="font-w--500 text-danger">And please delete the CSS
+                                    <code>
+                                        &lt;link rel=&quot;stylesheet&quot; href=&quot;css/custom.css&quot;&gt;
+                                    </code> from &lt;head&gt; of HTML or delete all codes from <code>css/custom.css</code> file. This file is for css user and It might conflict with your scss color and font updates
+                                    since the <code>custom.css</code> is placed bottom of the <code>app.css</code>.
+                                </p>
+                                <br>
+                                <pre>
+                                    <code class="language-html" data-lang="html">
+                                            &lt;!-- Your CSS --&gt;
+                                            &lt;link rel=&quot;stylesheet&quot; href=&quot;css/custom.css&quot;&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <!-- end of group -->
+                            <div class="card p-4" id="item-1-2">
+                                <h3 class="pb-2 h6-font">For CSS user:</h3>
+                                <p>It's highly recommended that all the customized styles to be stored only within the
+                                    <code>custom.css</code> file which is located css folder so you can update this theme anytime with no effort. When you update SpaceMax, make sure you backup your <code>custom.css</code> file, that may contain styles
+                                    you have created already.</p>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-2">
+                            <div class="mb-3">
+                                <h2 class="h4-font mb-1">How to include a typeface?</h2>
+                                <p class="lead">Add or change SpaceMax typography with the following instructions.
+                                </p>
+                                <br>
+
+                            </div>
+                            <div class="card p-4 mb-4" id="item-2-1">
+                                <h3 class="h5-font mb-1">Applying from SCSS</h3>
+                                <br>
+                                <ol class="p-0 m-0">
+                                    <li class="">
+                                        Add your font stylesheet into the <code class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets. Like:
+                                        <br>
+                                        <br>
+                                        <h3 class="pb-2 h6-font">HTML Code example:</h3>
+
+                                        <pre>
+                                            <code class="language-html" data-lang="html">
+                                            &lt;!-- fonts and icons --&gt;
+                                            &lt;link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"&gt;
+                                            </code>
+                                        </pre>
+                                        <br>
+                                    </li>
+                                    <li>
+                                        Open <code>scss/5-user/_typography.scss</code> files and update your typeface from the variable list.
+                                        <br>
+                                        <br>
+                                        <h3 class="pb-2 h6-font">SCSS Code example:</h3>
+
+                                        <pre>
+                                        <code class="language-scss" data-lang="scss">
+                                                // fonts family
+                                                // =============================================================
+                                                $font-heading: &apos;SFUI&apos;, sans-serif;
+                                                $font-body: &apos;SFUI&apos;, sans-serif;
+                                            </code>
+                                      </pre>
+                                    </li>
+                                </ol>
+                                <br>
+                                <p class="list-group-item">Check the <a href="colors.html#item-1" target="_blank">color</a> page to know how typography works with different background color.</p>
+                                
+                                <p class="list-group-item">Check the <a href="typography.html" target="_blank">typography</a> page to see more examples and class reference.</p>
+
+                            </div>
+                            <!-- end of css group -->
+                            <div class="card p-4" id="item-2-2">
+                                <h3 class="h5-font mb-1">Applying from CSS</h3>
+                                <br>
+                                <ol class="p-0 m-0">
+                                    <li class="">
+                                        Add your font stylesheet into the <code class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets. Like:
+                                        <br>
+                                        <br>
+                                        <h3 class="pb-2 h6-font">HTML Code example:</h3>
+
+                                        <pre>
+                                            <code class="language-html" data-lang="html">
+                                            &lt;!-- fonts and icons --&gt;
+                                            &lt;link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"&gt;
+                                            </code>
+                                        </pre>
+                                        <br>
+                                    </li>
+                                    <li>
+                                        Open <code>css/custom.css</code> files and simply replace the value of font family property.
+
+                                        <br>
+                                        <br>
+                                        <h3 class="pb-2 h6-font">CSS Code example:</h3>
+
+                                        <pre>
+                                        <code class="language-css" data-lang="css">
+                                            /**! ----- font family init ---- **/
+                                            h1,
+                                            h2,
+                                            h3,
+                                            h4,
+                                            h5,
+                                            h6 {
+                                              font-weight: 400;
+                                              font-family: &quot;SFUI&quot;, sans-serif;
+                                            }
+                                            
+                                            p {
+                                              font-weight: 400;
+                                              font-family: &quot;SFUI&quot;, sans-serif;
+                                            }
+                                        </code>
+                                      </pre>
+                                    </li>
+                                </ol>
+                            </div>
+                            <!-- end of css group -->
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-3">
+                            <div class="mb-3">
+                                <h2 class="h4-font mb-1">How to update colors?</h2>
+                                <p class="lead">There are three way you can update the template colors.</p>        
+                            </div>
+                            <div class="">
+
+                                <ol class="m-0 p-0">
+                                    <li class="card p-4 mb-3" id="item-3-1">
+                                        <div class="mb-1">
+                                            <h3 class="h5-font mb-1">Using template pre-defined colors</h3>
+                                            <p>SpaceMax comes with 16 pre-defined color and it is super easy to use. Simply add any of below classes to the <code>&lt;body&gt;</code> tag.</p>
+                                        </div>
+                                        <br>
+                                        <h3 class="pb-2 h6-font">Code example:</h3>
+                                        <pre>
+                                        <code class="language-html" data-lang="html">
+                                            &lt;body class=&quot;theme-blue&quot; data-spy=&quot;scroll&quot; data-target=&quot;#navbar-nav&quot;&gt;
+                                        </code>
+                                      </pre>
+                                        <div class="card bg-color-grey">
+                                            <div class="card-body">
+                                                <h6 class="mb-1">Class Reference</h6>
+                                                <p>You can apply either solid color or gradient color at a time. Gradient and Solid color won't work at the same time.</p>
+
+                                                <p>More information avilable in the <a href="template-options.html">template
+                                                        options</a> page</p>
+
+                                                <hr>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-royal-blue</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-blue</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-amethyst</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-roman</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-amaranth</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-orange</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-green</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-fern</code>
+                                                </dl>
+                                                <hr>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-gradient-1</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-gradient-2</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-gradient-3</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-gradient-4</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-gradient-5</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-gradient-6</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-gradient-7</code>
+                                                </dl>
+                                                <dl class="row justfiy-content-between">
+                                                    <dt class="col-4"><code>.theme-gradient-8</code>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- end of template color -->
+                                    <li class="card p-4 mb-3" id="item-3-2">
+                                        <div class="mb-1">
+                                            <h3 class="h5-font mb-1">Applying your own colors using from SCSS</h3>
+                                            <p>First <strong>delete our pre-defined</strong> theme class from the the <code>&lt;body&gt;</code> tag. Such as: theme-royal-blue.</p>
+                                            <p>Now open <code>scss/5-user/_colors.scss</code> files, find the desire variable and update the value with your one.</p>
+                                        </div>
+
+                                        <p>For example, if you need to change the primary color, all you need to do is
+                                            replace <code>$color-primary</code> color value/code/variable with your own
+                                            color
+                                            value/code/variable.
+                                        </p>
+                                        <br>
+                                        <h3 class="pb-2 h6-font">SCSS Code example:</h3>
+                                        <pre>
+                                        <code class="language-scss" data-lang="scss">
+                                            $color-primary: $color-blue;
+                                        </code>
+                                        </pre>
+                                    </li>
+                                    <!-- end of own color  css-->
+                                    <li class="card p-4 mb-3" id="item-3-3">
+                                        <div class="mb-1">
+                                            <h3 class="h5-font mb-1">Applying your own colors from CSS</h3>
+                                            <p>First <strong>delete our pre-defined</strong> theme class from the the <code>&lt;body&gt;</code> tag. Such as: theme-royal-blue.</p>
+
+                                            <p>Now open <code>css/custom.css</code> files and simply replace the value<code> background, color, fill, border-color </code> properties.</p>
+                                        </div>
+                                        <br>
+                                        <h3 class="pb-2 h6-font">CSS Code example:</h3>
+                                        <pre>
+                                        <code class="language-css" data-lang="css">
+                                            /**! ----- Theme Common colors (Also Used as extend in SCSS ) ---- **/
+                                            mark,
+                                            ins,
+                                            .bg-color--primary,
+                                            [class*="bg-color--primary-opacity-"]::before,
+                                            .btn-bg--primary,
+                                            .btn-bg--primary--05::after,
+                                            .btn-hover--primary:hover,
+                                            .card-hover--bg--primary-shadow.focused,
+                                            .card-hover--bg--primary-shadow:hover,
+                                            .preloader .blobs .blob-center,
+                                            .preloader .blob,
+                                            .form--v8:after,
+                                            .ico-progress--v2 .ico-progress__stages:after,
+                                            .decor,
+                                            .carosuel-triangle:hover,
+                                            .carosuel-slider--v6 .slick-dots .slick-active button,
+                                            .label-bg--light--200::before,
+                                            .pagination .page-item.active .page-link,
+                                            .sticky .card,
+                                            .sticky .article__thumbnail-image::before,
+                                            .widget_calendar tbody a,
+                                            .post-navigation .meta-nav::before,
+                                            .navbar-sticky--moved-up.sticky-bg-color--primary,
+                                            .roadmap--v4 .roadmap-item--current .timeline-line:before{
+                                                background: #3965f4;
+                                            }
+
+                                            .color--primary,
+                                            .card--v2 .card.focused .card__title,
+                                            .card--v2 .card:hover .card__title,
+                                            a.list-group-item:hover,
+                                            a.list-group-item.active,
+                                            a.list-group-item:focus,
+                                            .text-hover--primary:hover,
+                                            .section--dark .text-hover--primary:hover,
+                                            .section--darkblue .text-hover--primary:hover,
+                                            .icon-rounded-color--gray i:hover,
+                                            .carosuel-arrow,
+                                            .carosuel-cursor--dark i:hover,
+                                            .dropdown-module__item:focus,
+                                            .dropdown-module__item:hover,
+                                            .dropdown-module--dark .dropdown-module__item:focus,
+                                            .dropdown-module--dark .dropdown-module__item:hover,
+                                            .label-bg--primary,
+                                            .pagination .page-item:not(.active) .page-link,
+                                            .breadcrumb--v1 .breadcrumb,
+                                            .breadcrumb--v1 .breadcrumb a,
+                                            .blog-details .article-content a,
+                                            .blog-details .comment-content a,
+                                            .article-author__name:hover,
+                                            .article__title h2:hover,
+                                            .blog-details .entry-header .entry-author .url:hover,
+                                            .blog-details .entry-meta .post-categories a,
+                                            .blog-sidebar .widget-title,
+                                            .blog-sidebar .widget li a:hover,
+                                            .blog-sidebar .widget li a:focus,
+                                            .blog-sidebar .widget li a:hover i,
+                                            .blog-sidebar .widget li a:focus i,
+                                            .blog-sidebar .widget_tag_cloud ul li a:hover,
+                                            .blog-sidebar .widget_nav .menu li .current_page_item>a,
+                                            .blog-sidebar .widget_nav .menu li .current-menu-item>a,
+                                            .widget_calendar tfoot a,
+                                            .widget_rss .widget-title .rsswidget,
+                                            .post-navigation .meta-nav,
+                                            .post-navigation .post-title:hover,
+                                            .tags-links a,
+                                            .comments-area .comment-reply-link,
+                                            .dropdown-item:focus,
+                                            .dropdown-item:hover,
+                                            .dropdown-item.active,
+                                            .dropdown-item:active,
+                                            .footer.section--light a:hover,
+                                            .sidebar-nav .sidebar-nav .navigation .nav-item.active>.nav-link,
+                                            .sidebar-nav .sidebar-nav .navigation .nav-item:hover>.nav-link,
+                                            .documentation .color-primary,
+                                            .documentation div.code-toolbar>.toolbar a:hover{
+                                                color: #3965f4;
+                                            }
+
+                                            .fill--primary rect,
+                                            .fill--primary path,
+                                            .fill--primary polygon,
+                                            .fill--primary circle{
+                                                fill: #3965f4;
+                                            }
+
+                                            .btn-border--color--primary,
+                                            .btn-hover--primary.btn-border--color--dark:hover,
+                                            .btn-hover--primary.btn-border--color--light:hover,
+                                            .icon-rounded-color--primary,
+                                            .icon-rounded-color--gray i:hover,
+                                            .carosuel-arrow{
+                                                border-color: #3965f4;
+                                            }
+                                        </code>
+                                        </pre>
+                                    </li>
+                                    <!-- end of own color -->
+                                </ol>
+                                <p class="list-group-item">Check the <a href="colors.html" target="_blank">color</a>  page to see more examples and class reference.</p>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceMax - Colors</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- fonts and icons -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color-black.png" alt="brand-logo" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="chart.html" class="nav-link">Chart</a></li>
+                        <li class="nav-item active"><a href="colors.html" class="nav-link">Colors</a></li></li>
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="dropdown.html" class="nav-link">Dropdown Module</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player Buttons</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                            <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                        
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Template Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="template-options.html" class="nav-link">SpaceMax template options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- =========== End of  Sidebar ============ -->
+
+    <!-- =========== Start of Right Sidebar ============ -->
+    <nav class="navbar navbar-light sidebar" id="sidebar">
+        <div class="inner">
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Text Color</a>
+                <nav class="nav nav-pills nav-pills--sub flex-column">
+                    <a class="nav-link ml-1" href="#item-1-1">Text color on light</a>
+                    <a class="nav-link ml-1" href="#item-1-2">Text color on dark</a>
+                    <a class="nav-link ml-1" href="#item-1-3">Text color on dark blue</a>
+                    <a class="nav-link ml-1" href="#item-1-4">More text color</a>
+                    <a class="nav-link ml-1" href="#item-1-5">Color class ceference</a>
+                </nav>
+                <a class="nav-link" href="#item-2">Border Color</a>
+                <nav class="nav nav-pills nav-pills--sub flex-column">
+                    <a class="nav-link ml-1" href="#item-2-1">Border color on light</a>
+                    <a class="nav-link ml-1" href="#item-2-2">Border color on dark</a>
+                    <a class="nav-link ml-1" href="#item-2-3">Border color on dark blue</a>
+                    <a class="nav-link ml-1" href="#item-2-4">Color class ceference</a>
+                </nav>
+                <a class="nav-link" href="#item-3">Background Colors</a>
+                <nav class="nav nav-pills nav-pills--sub flex-column">
+                    <a class="nav-link ml-1" href="#item-3-1">Background class reference</a>
+                    <a class="nav-link ml-1" href="#item-3-2">Notes</a>
+                </nav>
+            </nav>
+        </div>
+    </nav>
+    <!-- =========== End of Right Sidebar ============ -->
+            
+    <main class="main documentation">
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1">
+                        <!-- Getting started -->
+                        <div class="content-title mb-3 pb-3 border-bottom">
+                            <h1 class="h3-font mb-1">Colors</h1>
+                            <p class="h6-font text-color--700">Check the <a href="customization.html#item-3" target="_blank">customization</a> page to know how to update the theme color.</p>
+
+                        </div>
+
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-1">
+                            <div>
+                                <h3 class="pb-1 h4-font">Text Color</h3>
+                                <p>Since each of the section/ element has multiple backgrounds (Light, Dark, Dark Blue, other gradients) options we declared those section with an identifier class. The colors are nested with those classes. It means the same <code>class</code> will be generated a different color that fits with the background.</p>
+                            </div>
+                            <hr>
+                            <div class="card d-block p-4 mb-3" id="item-1-1">
+                                <div class="mb-3">
+                                    <h3 class="h5-font">Text color on light/white background (Dynamic Color)</h3>
+                                    <hr>
+                                </div>
+
+                                <div>
+                                    <p class="text-color--200">text-color--200 on light/white background</p>
+                                    <p class="text-color--300">text-color--300 on light/white background</p>
+                                    <p class="text-color--400">text-color--400 on light/white background</p>
+                                    <p class="text-color--500">text-color--500 on light/white background</p>
+                                </div>
+                                <h3 class="mt-3 mb-2 h6-font">Markup example:</h3>
+
+                                <div class="highlight mt-3">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &#x3C;p class=&#x22;text-color--200&#x22;&#x3E;text-color--200 on light/white background&#x3C;/p&#x3E;
+                                        &#x3C;p class=&#x22;text-color--300&#x22;&#x3E;text-color--300 on light/white background&#x3C;/p&#x3E;
+                                        &#x3C;p class=&#x22;text-color--400&#x22;&#x3E;text-color--400 on light/white background&#x3C;/p&#x3E;
+                                        &#x3C;p class=&#x22;text-color--500&#x22;&#x3E;text-color--500 on light/white background&#x3C;/p&#x3E;
+                                    </code></pre>
+                                </div>
+                            </div>    
+                            <!-- end of single item -->
+                            <div class="card d-block p-4 mb-3" id="item-1-2">
+                                <div class="mb-3">
+                                    <h3 class="h5-font">Text color on dark background (Dynamic Color)</h3>
+                                    <hr>
+                                </div>
+
+                                <div class="section--dark bg-color--dark--1 p-3 rounded--05">
+                                    <p class="text-color--200">text-color--200 on Dark background</p>
+                                    <p class="text-color--300">text-color--300 on Dark background</p>
+                                    <p class="text-color--400">text-color--400 on Dark background</p>
+                                    <p class="text-color--500">text-color--500 on Dark background</p>
+                                </div>
+                                <h3 class="mt-3 mb-2 h6-font">Markup example:</h3>
+
+                                <div class="highlight mt-3">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &#x3C;div class=&#x22;section--dark bg-color--dark--1&#x22;&#x3E;
+                                            &#x3C;p class=&#x22;text-color--200&#x22;&#x3E;text-color--200 on Dark background&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;text-color--300&#x22;&#x3E;text-color--300 on Dark background&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;text-color--400&#x22;&#x3E;text-color--400 on Dark background&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;text-color--500&#x22;&#x3E;text-color--500 on Dark background&#x3C;/p&#x3E;
+                                        &#x3C;/div&#x3E;
+                                    </code></pre>
+                                </div>
+                            </div>    
+                            <!-- end of single item -->
+                            <div class="card d-block p-4 mb-3" id="item-1-3">
+                                <div class="mb-3">
+                                    <h3 class="h5-font">Text color on dark blue background (Dynamic Color)</h3>
+                                    <hr>
+                                </div>
+
+                                <div class="section--darkblue bg-color--darkblue--1 p-3 rounded--05">
+                                    <p class="text-color--200">text-color--200 on Darkblue background</p>
+                                    <p class="text-color--300">text-color--300 on Darkblue background</p>
+                                    <p class="text-color--400">text-color--400 on Darkblue background</p>
+                                    <p class="text-color--500">text-color--500 on Darkblue background</p>
+                                </div>
+                                <h3 class="mt-3 mb-2 h6-font">Markup example:</h3>
+
+                                <div class="highlight mt-3">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &#x3C;div class=&#x22;section--darkblue bg-color--darkblue--1&#x22;&#x3E;
+                                            &#x3C;p class=&#x22;text-color--200&#x22;&#x3E;text-color--200 on Darkblue background&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;text-color--300&#x22;&#x3E;text-color--300 on Darkblue background&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;text-color--400&#x22;&#x3E;text-color--400 on Darkblue background&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;text-color--500&#x22;&#x3E;text-color--500 on Darkblue background&#x3C;/p&#x3E;
+                                        &#x3C;/div&#x3E;
+                                    </code></pre>
+                                </div>
+                            </div>    
+                            <!-- end of single item -->
+                            <div class="card d-block p-4 mb-3" id="item-1-4">
+                                <div class="mb-3">
+                                    <h3 class="h5-font">More color (Static Color)</h3>
+                                    <hr>
+                                </div>
+
+                                <div>
+                                    <p class="text-color--700">text-color--700</p>
+                                    <p class="color--primary">color--primary</p>
+                                    <p class="color--orange">color--orange</p>
+                                    <p class="color--coral">color--coral</p>
+                                    <p class="color--green">color--green</p>
+                                    <p class="text-color--cta--2">text-color--cta--2</p>
+                                    <p class="text-color--cta--3">text-color--cta--3</p>
+                                    <p class="text-color--cta--4">text-color--cta--4</p>
+                                    <p class="text-color--cta--5">text-color--cta--5</p>
+                                </div>
+                                <h3 class="mt-3 mb-2 h6-font">Markup example:</h3>
+
+                                <div class="highlight mt-3">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &#x3C;p class=&#x22;text-color--700&#x22;&#x3E;text-color--700&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;color--primary&#x22;&#x3E;color--primary&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;color--orange&#x22;&#x3E;color--orange&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;color--coral&#x22;&#x3E;color--coral&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;color--green&#x22;&#x3E;color--green&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;text-color--cta--2&#x22;&#x3E;text-color--cta--2&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;text-color--cta--3&#x22;&#x3E;text-color--cta--3&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;text-color--cta--4&#x22;&#x3E;text-color--cta--4&#x3C;/p&#x3E;
+                                            &#x3C;p class=&#x22;text-color--cta--5&#x22;&#x3E;text-color--cta--5&#x3C;/p&#x3E;        
+                                    </code></pre>
+                                </div>
+                            </div>    
+                            <!-- end of single item -->
+                            <div class="card p-2 box-shadow-3 bg-color-grey" id="item-1-5">
+                                <div class="card-body">
+                                    <h4>Class Reference</h4>
+                                    <hr>
+                                    <br>
+                                    <h6>Classes that will generate different color on different background (Dynamic Color Classes)</h6>
+                                    <hr>
+                                    <dl class="row justfiy-content-between mb-0 pb-0">
+                                        <dt class="col-12"><code>text-color--200</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>text-color--300</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>text-color--400</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>text-color--500</code></dt>
+                                    </dl>
+                                </div>
+                                <div class="card-body mb-0 pb-0">
+                                    <h6 class="title-decorative">Classes that won't generate different color on different background (Static Color Classes)</h6>
+                                    <hr>
+                                    <dl class="row justfiy-content-between">
+                                        <dt class="col-12"><code>text-color--700</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>text-color--cta--1</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>text-color--cta--2</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>text-color--cta--3</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>text-color--cta--4</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>text-color--cta--5</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>color--primary</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>color--orange</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>color--coral</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12"><code>color--green</code></dt>
+                                        <dd></dd>
+                                    </dl>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-2">
+                            <div>
+                                <h3 class="pb-1 h4-font">Border Color</h3>
+                                <p>The same method of text color applied on border. It means the same <code>class</code> will be generated a different border color that fits with the background.</p>
+                            </div>
+                            <hr>
+                            <div class="card bg-color--primary-light--1 d-block p-4 p-6 mb-3" id="item-2-1">
+                                <h3 class="pb-2 h5-font">Border color on light/white background</h3>
+                                <div class="section--light">
+                                    <div class="border--around pb-1 p-3 rounded-03"><p class="">border on light/white background</p></div>
+                                </div>
+                                <h3 class="mt-3 mb-2 h6-font">Markup example:</h3>
+                                <div class="highlight mt-3">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;section--light&quot;&gt;
+                                            &lt;div class=&quot;border--around&quot;&gt;...&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>    
+                            <!-- end of single item -->
+                            <div class="card section--dark bg-color--dark--1 d-block p-4 p-6 mb-3" id="item-2-2">
+                                <h3 class="pb-2 h5-font">Border color on dark background</h3>
+                                <div class="">
+                                    <div class="border--around pb-1 p-3 rounded-03"><p class="">border on light/white background</p></div>
+                                </div>
+                                <h3 class="mt-3 mb-2 h6-font">Markup example:</h3>
+                                <div class="highlight mt-3">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;section--dark bg-color--dark--1&quot;&gt;
+                                            &lt;div class=&quot;border--around&quot;&gt;...&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>    
+                            <!-- end of single item -->
+                            <div class="card section--darkblue bg-color--darkblue--1 d-block p-4 p-6 mb-3" id="item-2-3">
+                                <h3 class="pb-2 h5-font">Border color on dark background</h3>
+                                <div class="">
+                                    <div class="border--around pb-1 p-3 rounded-03"><p class="">border on light/white background</p></div>
+                                </div>
+                                <h3 class="mt-3 mb-2 h6-font">Markup example:</h3>
+                                <div class="highlight mt-3">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;section--darkblue bg-color--darkblue--1&quot;&gt;
+                                            &lt;div class=&quot;border--around&quot;&gt;...&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>    
+                            <!-- end of single item -->
+
+                            <div class="card p-2 box-shadow-3 bg-color-grey" id="item-2-4">
+                                <div class="card-body">
+                                <h6>Class Reference</h6>
+                                <hr>
+                                <dl class="row justfiy-content-between mb-0 pb-0">
+                                    <dt class="col-12"><code>border--none</code></dt>
+                                    <dd></dd>
+                                    <dt class="col-12"><code>border--around</code></dt>
+                                    <dd></dd>
+                                    <dt class="col-12"><code>border--top</code></dt>
+                                    <dd></dd>
+                                    <dt class="col-12"><code>border--bottom</code></dt>
+                                    <dd></dd>
+                                    <dt class="col-12"><code>border--left</code></dt>
+                                    <dd></dd>
+                                    <dt class="col-12"><code>border--right</code></dt>
+                                </dl>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-3">
+                            <div>
+                                <h3 class="pb-1 h4-font">Background Colors</h3>
+                            </div>
+                            <hr>
+                            <div class="card d-block p-2 mb-3 bg-color--primary">
+                                <p class="color--white">.bg-color--primary</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--dark--1">
+                                <p class="color--white">.bg-color--dark--1</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--dark--2">
+                                <p class="color--white">.bg-color--dark--2</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--dark--3">
+                                <p class="color--white">.bg-color--dark--3</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--darkblue--1">
+                                <p class="color--white">.bg-color--darkblue--1</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--green">
+                                <p class="color--white">.bg-color--green</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--purple">
+                                <p class="color--white">.bg-color--purple</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--transparent">
+                                <p class="color--dark">.bg-color--transparent</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--primary-opacity--05">
+                                <p class="color--dark">.bg-color--primary-opacity--05</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--primary-opacity--10">
+                                <p class="color--dark">.bg-color--primary-opacity--10</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--primary-opacity--15">
+                                <p class="color--dark">.bg-color--primary-opacity--15</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--primary-opacity--20">
+                                <p class="color--dark">.bg-color--primary-opacity--20</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--blue-opacity--10">
+                                <p class="color--dark">.bg-color--blue-opacity--10</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--blue-opacity--15">
+                                <p class="color--dark">.bg-color--blue-opacity--15</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--blue-opacity--20">
+                                <p class="color--dark">.bg-color--blue-opacity--20</p>
+                            </div>    
+
+                            <div class="card d-block p-2 mb-3 bg-color--black-opacity--10">
+                                <p class="color--dark">.bg-color--black-opacity--10</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--black-opacity--15">
+                                <p class="color--dark">.bg-color--black-opacity--15</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-color--black-opacity--20">
+                                <p class="color--dark">.bg-color--black-opacity--20</p>
+                            </div>    
+                            <div class="card bg-color--primary p-2 mb-3">
+                                <div class="card d-block p-2 bg-color--white-opacity--05">
+                                    <p class="color--white">.bg-color--white-opacity--05</p>
+                                </div>    
+                            </div>
+                            <div class="card bg-color--primary p-2 mb-3">
+                                <div class="card d-block p-2 bg-color--white-opacity--10">
+                                    <p class="color--white">.bg-color--white-opacity--10</p>
+                                </div>    
+                            </div>
+                            <div class="card bg-color--primary p-2 mb-3">
+                                <div class="card d-block p-2 bg-color--white-opacity--15">
+                                    <p class="color--white">.bg-color--white-opacity--15</p>
+                                </div>    
+                            </div>
+                            <div class="card bg-color--primary p-2 mb-3">
+                                <div class="card d-block p-2 bg-color--white-opacity--20">
+                                    <p class="color--white">.bg-color--white-opacity--20</p>
+                                </div>    
+                            </div>
+                            <div class="card d-block p-2 mb-3 bg-gradient-primary--1">
+                                <p class="color--dark">.bg-gradient-primary--1</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--1">
+                                <p class="color--white">.bg-gradient--1</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--2">
+                                <p class="color--white">.bg-gradient--2</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--3">
+                                <p class="color--white">.bg-gradient--3</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--4">
+                                <p class="color--white">.bg-gradient--4</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--5">
+                                <p class="color--white">.bg-gradient--5</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--6">
+                                <p class="color--white">.bg-gradient--6</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--7">
+                                <p class="color--white">.bg-gradient--7</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--8">
+                                <p class="color--white">.bg-gradient--8</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--darkblue--1">
+                                <p class="color--white">.bg-gradient--darkblue--1</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--darkblue--2">
+                                <p class="color--white">.bg-gradient--darkblue--2</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--darkblue--3">
+                                <p class="color--white">.bg-gradient--darkblue--3</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--darkblue--4">
+                                <p class="color--white">.bg-gradient--darkblue--4</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--darkblue--5">
+                                <p class="color--white">.bg-gradient--darkblue--5</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient--darkblue--6">
+                                <p class="color--white">.bg-gradient--darkblue--6</p>
+                            </div>    
+                            <div class="card d-block p-2 mb-3 bg-gradient-purple--1">
+                                <p class="color--white">.bg-gradient-purple--1</p>
+                            </div>    
+                            <h3 class="mb-2 h6-font">Markup example:</h3>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                        &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--primary&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--primary&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--dark--1&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--dark--1&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--dark--2&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--dark--2&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--dark--3&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--dark--3&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--darkblue--1&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--darkblue--1&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--green&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--green&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--purple&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--purple&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--transparent&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--transparent&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--primary-opacity--05&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--primary-opacity--05&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--primary-opacity--10&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--primary-opacity--10&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--primary-opacity--15&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--primary-opacity--15&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--primary-opacity--20&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--primary-opacity--20&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--blue-opacity--10&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--blue-opacity--10&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--blue-opacity--15&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--blue-opacity--15&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--blue-opacity--20&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--blue-opacity--20&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+        
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--black-opacity--10&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--black-opacity--10&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--black-opacity--15&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--black-opacity--15&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-color--black-opacity--20&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-color--black-opacity--20&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card bg-color--primary p-2 mb-3&#x22;&#x3E;
+                                        &#x3C;div class=&#x22;card d-block p-2 bg-color--white-opacity--05&#x22;&#x3E;
+                                            &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--white-opacity--05&#x3C;/p&#x3E;
+                                        &#x3C;/div&#x3E;    
+                                    &#x3C;/div&#x3E;
+                                    &#x3C;div class=&#x22;card bg-color--primary p-2 mb-3&#x22;&#x3E;
+                                        &#x3C;div class=&#x22;card d-block p-2 bg-color--white-opacity--10&#x22;&#x3E;
+                                            &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--white-opacity--10&#x3C;/p&#x3E;
+                                        &#x3C;/div&#x3E;    
+                                    &#x3C;/div&#x3E;
+                                    &#x3C;div class=&#x22;card bg-color--primary p-2 mb-3&#x22;&#x3E;
+                                        &#x3C;div class=&#x22;card d-block p-2 bg-color--white-opacity--15&#x22;&#x3E;
+                                            &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--white-opacity--15&#x3C;/p&#x3E;
+                                        &#x3C;/div&#x3E;    
+                                    &#x3C;/div&#x3E;
+                                    &#x3C;div class=&#x22;card bg-color--primary p-2 mb-3&#x22;&#x3E;
+                                        &#x3C;div class=&#x22;card d-block p-2 bg-color--white-opacity--20&#x22;&#x3E;
+                                            &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-color--white-opacity--20&#x3C;/p&#x3E;
+                                        &#x3C;/div&#x3E;    
+                                    &#x3C;/div&#x3E;
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient-primary--1&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--dark&#x22;&#x3E;.bg-gradient-primary--1&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--1&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--1&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--2&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--2&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--3&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--3&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--4&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--4&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--5&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--5&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--6&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--6&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--7&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--7&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--8&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--8&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--darkblue--1&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--darkblue--1&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--darkblue--2&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--darkblue--2&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--darkblue--3&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--darkblue--3&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--darkblue--4&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--darkblue--4&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--darkblue--5&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--darkblue--5&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient--darkblue--6&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient--darkblue--6&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                                    &#x3C;div class=&#x22;card d-block p-2 mb-3 bg-gradient-purple--1&#x22;&#x3E;
+                                        &#x3C;p class=&#x22;color--white&#x22;&#x3E;.bg-gradient-purple--1&#x3C;/p&#x3E;
+                                    &#x3C;/div&#x3E;    
+                         
+                                </code></pre>
+                                </div>
+                                <div class="card p-2 box-shadow-3 bg-color-grey" id="item-3-1">
+                                        <div class="card-body">
+                                        <h6>Class Reference</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between mb-0 pb-0">
+                                            <dt class="col-12"><code>bg-color--primary</code></dt>
+                                            <dd></dd>
+                                            <dt class="col-12"><code>bg-color--dark--1</code></dt>
+                                            <dd></dd>
+                                            <dt class="col-12"><code>bg-color--dark--2</code></dt>
+                                            <dd></dd>
+                                            <dt class="col-12"><code>bg-color--dark--3</code></dt>
+                                            <dd></dd>
+                                            <dt class="col-12"><code>bg-color--darkblue--1</code></dt>
+                                            <dd></dd>
+                                            <dt class="col-12"><code>bg-color--green</code></dt>
+                                            <dd></dd>
+                                            <dt class="col-12"><code>bg-color--purple</code></dt>
+                                            <dd></dd>
+                                            <dt class="col-12"><code>bg-color--transparent</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--primary-opacity--05</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--primary-opacity--10</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--primary-opacity--15</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--primary-opacity--20</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--blue-opacity--10</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--blue-opacity--15</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--blue-opacity--20</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--black-opacity--10</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--black-opacity--15</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--black-opacity--20</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--white-opacity--05</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--white-opacity--10</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--white-opacity--15</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-color--white-opacity--20</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient-primary--1</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--1</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--2</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--3</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--4</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--5</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--6</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--7</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--8</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--darkblue--1</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--darkblue--2</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--darkblue--3</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--darkblue--4</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--darkblue--5</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient--darkblue--6</code></dt><dd></dd>
+                                            <dt class="col-12"><code>bg-gradient-purple--1</code></dt><dd></dd>
+                                        </dl>
+                                    </div>
+                                    </div>
+        
+                                    <div class="list-group-item mt-2" id="item-3-2">
+                                        <p> <strong>primary color and its class</strong> is always generate dynamic color. Such as this documentation was set to <code>theme-blue</code> which is why it's rendering blue as primary color. If it was set to <code>theme-orange</code> it would render orange color instead of current blue color.</p>
+                                    </div>
+                        </div>
+                            <!-- end of group -->
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceMax - Button</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- fonts and icons -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color-black.png" alt="brand-logo" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item active"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="chart.html" class="nav-link">Chart</a></li>
+                        <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li></li>
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="dropdown.html" class="nav-link">Dropdown Module</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player Buttons</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                            <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                        
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Template Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="template-options.html" class="nav-link">SpaceMax  template options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- =========== End of Sidebar ============ -->
+        
+    <nav class="navbar navbar-light sidebar" id="sidebar">
+        <div class="inner">
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">SpaceMax Buttons</a>
+                <a class="nav-link" href="#item-2">Button Color Options</a>
+                <nav class="nav nav-pills nav-pills--sub flex-column">
+                    <a class="nav-link ml-1" href="#item-2-1">Button Background Color</a>
+                    <a class="nav-link ml-1" href="#item-2-2">Transparent Background Color</a>
+                    <a class="nav-link ml-1" href="#item-2-3">Outline Button Color</a>
+                </nav>
+                <a class="nav-link" href="#item-3">Button Size</a>
+                <a class="nav-link" href="#item-4">Button Couple</a>
+                <a class="nav-link" href="#item-5">Button Hover Style</a>
+                <a class="nav-link" href="#item-6">Class Reference</a>
+            </nav>
+        </div>
+    </nav>
+    <!-- =========== End of Right Sidebar ============ -->
+
+    <!-- =========== End of Sidebar ============ -->
+    <main class="main documentation section--light">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1">
+                        <!-- Getting started -->
+                        <div class="content-title mb-3 pb-3 border-bottom">
+                            <h1 class="h3-font mb-1">Buttons</h1>
+                            <p class="lead mb-2">Use our custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more. </p>
+                        </div>
+                        <!-- end of group -->
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-1">
+                            <h3 class="pb-2 h4-font">SpaceMax Buttons</h3>
+                                <div class="card p-4 flex-row flex-wrap">
+
+                                <!-- Button Regular -->
+                                <a href="#" class="btn btn-bg--primary m-1"><span class="btn__text">Button Default</span></a>
+
+                                <!-- Button Regular Rounded -->
+                                <a href="#" class="btn btn-bg--primary rounded--full m-1"><span class="btn__text">Button Rounded</span></a>
+
+                                <!-- Button without Rounded Eadge-->
+                                <a href="#" class="btn btn-bg--primary rounded--none m-1"><span class="btn__text">Button without Rounded Eadge</span></a>
+
+                                <!-- Button with thin border -->
+                                <a href="#" class="btn btn-border m-1">
+                                    <span class="btn__text">Thin Outline Button</span>
+                                </a>
+
+                                <!-- Button with Thick border -->
+                                <a href="#" class="btn btn-border btn-border--width--2 m-1">
+                                    <span class="btn__text">Thick Outline Button</span>
+                                </a>
+
+                                <!-- Button with Icon -->
+                                <a href="#" class="btn btn-bg--primary m-1"><span class="btn__text">Button with Icon<i class="icon icon-arrow-right"></i></span></a>
+
+                                <!-- Button without Icon -->
+                                <a href="#" class="btn btn-bg--primary m-1"><span class="btn__text"><i class="icon icon-arrow-right p-0"></i></span></a>
+
+                                <!-- Button Transparent Icon -->
+                                <a href="#" class="btn btn--transparent m-2"><span class="btn__text">Button Transparent</span></a>
+
+                            </div>
+                            <br>
+                            <br>
+                            <h3 class="pb-2 h6-font">Markup example:</h3>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                    &lt;!-- Button Regular --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button Default&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button Regular Rounded --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary rounded--full&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button Rounded&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button without Rounded Eadge--&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary rounded--none&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button without Rounded Eadge&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button with thin border --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-border&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Thin Outline Button&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button with Thick border --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-border btn-border--width--2&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Thick Outline Button&lt;/span&gt;&lt;/a&gt;
+
+                                    &lt;!-- Button with Icon --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button with Icon&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button without Icon --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;&lt;i class=&quot;icon icon-arrow-right p-0&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+
+                                    &lt;!-- Button Transparent Icon --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--transparent m-2&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button Transparent&lt;/span&gt;&lt;/a&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-2">
+                            <div class="bg-color--primary-light--1 p-2 border-bottom border--top">
+                                <h3 class="h4-font ">Button Color Options</h3>
+                            </div>
+                            <!-- end of title -->
+                            <div class="p-3" id="item-2-1">
+                                <h4 class="pb-2 h4-font">Button Background Color</h4>
+                                <div class="card p-4 flex-row flex-wrap">
+                                    <!-- Button BG Primary -->
+                                    <a href="#" class="btn btn-bg--primary m-1"><span class="btn__text">Button BG Primary</span></a>
+    
+                                    <!-- Button BG Light -->
+                                    <a href="#" class="btn btn-bg--primary--05 m-1"><span class="btn__text">Button BG Light</span></a>
+                                    
+                                    <!-- Button BG Dark -->
+                                    <a href="#" class="btn btn-bg--dark m-1"><span class="btn__text">Button BG Dark</span></a>
+                                    
+                                    <!-- Button BG Dark Blue -->
+                                    <a href="#" class="btn btn-bg--darkblue m-1"><span class="btn__text">Button BG Darkblue</span></a>
+                                    
+                                    <!-- Button BG CTA V1 -->
+                                    <a href="#" class="btn btn-bg--cta--1 m-1"><span class="btn__text">Button BG CTA V1</span></a>
+    
+                                    <!-- Button BG CTA V2 -->
+                                    <a href="#" class="btn btn-bg--cta--2 m-1"><span class="btn__text">Button BG CTA V2</span></a>
+    
+                                    <!-- Button BG CTA V3 -->
+                                    <a href="#" class="btn btn-bg--cta--3 m-1"><span class="btn__text">Button BG CTA V3</span></a>
+    
+                                    <!-- Button BG CTA V4 -->
+                                    <a href="#" class="btn btn-bg--cta--4 m-1"><span class="btn__text">Button BG CTA V4</span></a>
+    
+                                    <!-- Button BG CTA V5 -->
+                                    <a href="#" class="btn btn-bg--cta--5 m-1"><span class="btn__text">Button BG CTA V5</span></a>
+                                </div>
+                                
+                                <br>
+                                <br>
+    
+                                <h3 class="pb-2 h6-font">Markup example:</h3>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &lt;!-- Button BG Primary --&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG Primary&lt;/span&gt;&lt;/a&gt;
+        
+                                        &lt;!-- Button BG Light --&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary--05 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG Light&lt;/span&gt;&lt;/a&gt;
+                                        
+                                        &lt;!-- Button BG Dark --&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--dark m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG Dark&lt;/span&gt;&lt;/a&gt;
+                                        
+                                        &lt;!-- Button BG Dark Blue --&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--darkblue m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG Darkblue&lt;/span&gt;&lt;/a&gt;
+                                        
+                                        &lt;!-- Button BG CTA V1 --&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--cta--1 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG CTA V1&lt;/span&gt;&lt;/a&gt;
+        
+                                        &lt;!-- Button BG CTA V2 --&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--cta--2 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG CTA V2&lt;/span&gt;&lt;/a&gt;
+        
+                                        &lt;!-- Button BG CTA V3 --&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--cta--3 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG CTA V3&lt;/span&gt;&lt;/a&gt;
+        
+                                        &lt;!-- Button BG CTA V4 --&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--cta--4 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG CTA V4&lt;/span&gt;&lt;/a&gt;
+        
+                                        &lt;!-- Button BG CTA V5 --&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--cta--5 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG CTA V5&lt;/span&gt;&lt;/a&gt;
+                                    </code></pre>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-2-2">
+                            <div class="pb-2">
+                                <h3 class="h4-font mb-1">Button Color White + Transparent Button</h3>
+                                <p>Transparent button will fit with any background except white</p>
+                            </div>
+
+                            <div class="card bg-color--primary p-4 flex-row flex-wrap">
+                                <!-- Button BG Transparent V1-->
+                                <a href="#" class="btn btn-bg--white--10 color--white m-1"><span class="btn__text">Button BG Transparent V1 </span></a>
+
+                                <!-- Button BG Transparent V2-->
+                                <a href="#" class="btn btn-bg--white--15 color--white m-1"><span class="btn__text">Button BG Transparent V2 </span></a>
+
+                                <!-- Button BG Transparent V3-->
+                                <a href="#" class="btn btn-bg--white--20 color--white m-1"><span class="btn__text">Button BG Transparent V3 </span></a>
+
+                                <!-- Button BG White-->
+                                <a href="#" class="btn btn-bg--white m-1"><span class="btn__text">Button BG White</span></a>
+                            </div>
+                            <br>
+                            <br>
+                            <h3 class="pb-2 h6-font">Markup example:</h3>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                    &lt;!-- Button BG Transparent V1--&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--white--10 color--white&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG Transparent V1 &lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button BG Transparent V2--&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--white--15 color--white&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG Transparent V2 &lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button BG Transparent V3--&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--white--20 color--white&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG Transparent V3 &lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button BG White--&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--white&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button BG White&lt;/span&gt;&lt;/a&gt;
+                                </code></pre>
+                            </div>
+    
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-2-3">
+                            <h3 class="pb-2 h4-font">Outline Button Colors</h3>
+                            <div class="bg-color--primary-light--1 card p-4 flex-row flex-wrap">
+
+                                <!-- Button Outline Primary-->
+                                <a href="#" class="btn btn-border btn-border--color--primary color--primary m-1"><span class="btn__text">Button Outline Primary </span></a>
+
+                                <!-- Button Outline Dark-->
+                                <a href="#" class="btn btn-border btn-border--color--dark m-1"><span class="btn__text">Button Outline Dark </span></a>
+
+                                <!-- Button Outline Dark-->
+                                <a href="#" class="btn btn-border btn-border--color--light m-1"><span class="btn__text">Button Outline White</span></a>
+                            </div>
+
+                            <br>
+                            <br>
+                            <h3 class="pb-2 h6-font">Markup example:</h3>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                    &lt;!-- Button Outline Primary--&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-border btn-border--color--primary color--primary&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button Outline Primary &lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button Outline Dark--&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-border btn-border--color--dark&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button Outline Dark &lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button Outline Dark--&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-border btn-border--color--light&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button Outline White&lt;/span&gt;&lt;/a&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <br>
+                        <br>
+
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-3">
+                            <h3 class="pb-2 h4-font">Button Size</h3>
+                            <div class="card p-4 flex-row flex-wrap align-items-center">
+
+                                <!-- Regular Size Button -->
+                                <a href="#" class="btn btn-bg--primary mr-1"><span class="btn__text">Regular Size Button</span></a>
+
+                                <!-- Regular Size Large -->
+                                <a href="#" class="btn btn-bg--primary btn-size--lg mr-1"><span class="btn__text">Regular Size Large</span></a>
+                                
+                                <!-- Regular Size Medium -->
+                                <a href="#" class="btn btn-bg--primary btn-size--md mr-1"><span class="btn__text">Regular Size Medium</span></a>
+                                
+                                <!-- Regular Size Small -->
+                                <a href="#" class="btn btn-bg--primary btn-size--sm mr-1"><span class="btn__text">Regular Size Small</span></a>
+                            </div>
+
+                            <br>
+                            <br>
+                            <h3 class="pb-2 h6-font">Markup example:</h3>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                    &lt;!-- Regular Size Button --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary mr-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Regular Size Button&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Regular Size Large --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary btn-size--lg mr-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Regular Size Large&lt;/span&gt;&lt;/a&gt;
+                                    
+                                    &lt;!-- Regular Size Medium --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary btn-size--md mr-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Regular Size Medium&lt;/span&gt;&lt;/a&gt;
+                                    
+                                    &lt;!-- Regular Size Small --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary btn-size--sm mr-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Regular Size Small&lt;/span&gt;&lt;/a&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-4">
+                            <h3 class="pb-1 h4-font">Button Couple</h3>
+                            <p class="mb-2">Apply some space between two buttons. And it won't not work if there is
+                                more than two buttons</p>
+
+                            <div class="card p-4 flex-row flex-wrap">
+                                <div class="button-group">
+                                    <a href="#" class="btn btn-bg--primary"><span class="btn__text">Button one</span></a>
+                                    <a href="#" class="btn btn-bg--primary"><span class="btn__text">Button two</span></a>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <h3 class="pb-2 h6-font">Markup example:</h3>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                &lt;div class=&quot;button-group&quot;&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button one&lt;/span&gt;&lt;/a&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button two&lt;/span&gt;&lt;/a&gt;
+                                &lt;/div&gt;
+
+                            </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-5">
+                            <h3 class="pb-2 h4-font">Button Hover Style</h3>
+                            <div class="card p-4 flex-row flex-wrap">
+
+                                <!-- Button 3D Hover -->
+                                <a href="#" class="btn btn-bg--primary btn-hover--3d m-1"><span class="btn__text">Button 3D Hover</span></a>
+
+                                <!-- Button Splash Hover -->
+                                <a href="#" class="btn btn-bg--primary btn-hover--splash m-1"><span class="btn__text">Button Splash Hover</span></a>
+
+                                <!-- Button Splash & 3D Hover -->
+                                <a href="#" class="btn btn-bg--primary btn-hover--3d btn-hover--splash m-1"><span class="btn__text">Button Splash & 3D Hover</span></a>
+
+                                <!-- Button Primary BG Hover -->
+                                <a href="#" class="btn btn-bg--dark btn-hover--primary m-1"><span class="btn__text">Button Primary BG Hover</span></a>
+
+                                <!-- Button CTA BG Hover V1 -->
+                                <a href="#" class="btn btn-bg--primary btn-hover--cta--1 m-1"><span class="btn__text">Button CTA BG Hover V1</span></a>
+
+                                <!-- Button CTA BG Hover V2 -->
+                                <a href="#" class="btn btn-border btn-hover--cta--2 m-1"><span class="btn__text">Button CTA BG Hover V2</span></a>
+
+                                <!-- Button CTA BG Hover V3 -->
+                                <a href="#" class="btn btn-border btn-border--width--2 btn-hover--cta--3 m-1"><span class="btn__text">Button CTA BG Hover V3</span></a>
+
+                                <!-- Button CTA BG Hover V4 -->
+                                <a href="#" class="btn btn-bg--primary btn-hover--cta--4 m-1"><span class="btn__text">Button CTA BG Hover V4</span></a>
+
+                                <!-- Button CTA BG Hover V5 -->
+                                <a href="#" class="btn btn-bg--primary btn-hover--cta--5 m-1"><span class="btn__text">Button CTA BG Hover V5</span></a>
+
+                                <!-- Text Hover Color Primary -->
+                                <a href="#" class="btn text-hover--primary m-1"><span class="btn__text">Text Hover Color Primary</span></a>
+
+                                <!-- Text Hover Dark -->
+                                <a href="#" class="btn color--primary text-hover--dark m-1"><span class="btn__text">Text Hover Dark</span></a>
+
+                                <!-- Text Hover Light -->
+                                <a href="#" class="btn color--primary text-hover--light m-1"><span class="btn__text">Text Hover Light</span></a>
+
+                            </div>
+                            <br>
+                            <br>
+                            <h3 class="pb-2 h6-font">Markup example:</h3>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                    &lt;!-- Button 3D Hover --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary btn-hover--3d m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button 3D Hover&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button Splash Hover --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary btn-hover--splash m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button Splash Hover&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button Splash &amp; 3D Hover --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary btn-hover--3d btn-hover--splash m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button Splash &amp; 3D Hover&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button Primary BG Hover --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--dark btn-hover--primary m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button Primary BG Hover&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button CTA BG Hover V1 --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary btn-hover--cta--1 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button CTA BG Hover V1&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button CTA BG Hover V2 --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-border btn-hover--cta--2 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button CTA BG Hover V2&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button CTA BG Hover V3 --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-border btn-border--width--2 btn-hover--cta--3 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button CTA BG Hover V3&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button CTA BG Hover V4 --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary btn-hover--cta--4 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button CTA BG Hover V4&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Button CTA BG Hover V5 --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-bg--primary btn-hover--cta--5 m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Button CTA BG Hover V5&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Text Hover Color Primary --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn text-hover--primary m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Text Hover Color Primary&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Text Hover Dark --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn color--primary text-hover--dark m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Text Hover Dark&lt;/span&gt;&lt;/a&gt;
+    
+                                    &lt;!-- Text Hover Light --&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn color--primary text-hover--light m-1&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Text Hover Light&lt;/span&gt;&lt;/a&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-6">
+                            <div class="card flex-row flex-wrap">
+                                <div class="card-body">
+                                    <h3 class="pb-2 h4-font">Additional Class Reference</h3>
+                                    <hr>
+                                    <dl class="row justfiy-content-between">
+                                        <dt class="col-12 col-lg-6"><code>btn</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>rounded--full</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>rounded--none</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn--transparent</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-border</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-border--width--2</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>border-width--2</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--primary</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--primary--05</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--dark</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--darkblue</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--cta--1</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--cta--2</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--cta--3</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--cta--4</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--cta--5</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--white--10</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--white--15</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--white--20</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-bg--white</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-border--color--primary</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-border--color--dark</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-border--color--light</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-size--lg</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-size--md</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-size--sm</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>button-group</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-hover--3d</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-hover--splash</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-hover--primary</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-hover--cta--1</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-hover--cta--2</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-hover--cta--3</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-hover--cta--4</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>btn-hover--cta--5</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>text-hover--primary</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>text-hover--dark</code></dt>
+                                        <dd></dd>
+                                        <dt class="col-12 col-lg-6"><code>text-hover--light</code></dt>
+                                        <dd></dd>
+                                    </dl>
+                                    <dl class="row justfiy-content-between border--around rounded-03 pt-3 pl-2 m-1">
+                                        <dt class="col-7 col-lg-3"><code>btn__text</code>
+                                        </dt>
+                                        <dd class="col-7 col-lg-9"> <code>btn__text</code> should be child class/ element of <code>btn</code> class</dd>
+                                    </dl>
+                                    <!-- end of item -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <p class="list-group-item mb-4">Media buttons references are <a href="media-player.html" target="_blank">here.</a></p>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

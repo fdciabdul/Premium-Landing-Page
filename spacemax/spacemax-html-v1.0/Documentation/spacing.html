@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceMax - Spacing</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- fonts and icons -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color-black.png" alt="brand-logo" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="chart.html" class="nav-link">Chart</a></li>
+                        <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li></li>
+
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="dropdown.html" class="nav-link">Dropdown Module</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player Buttons</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                        <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Template Helpers</a></li>
+                        <li class="nav-item active"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="template-options.html" class="nav-link">SpaceMax template options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- =========== End of Sidebar ============ -->
+        <main class="main documentation section--light">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1">
+                        <!-- Getting started -->
+                        <div class="content-title mb-3 pb-3 border-bottom">
+                            <h1 class="h3-font mb-1">Spacing</h1>
+                            <p class="lead font-w--400 mb-3">SpaceMax includes a wide range of shorthand responsive
+                                margin and padding utility classes to modify an element's appearance. The Bootstrap
+                                default spacer also available along with SpaceMax</p>
+                            <a class="btn-text-hover" href="https://getbootstrap.com/docs/4.3/utilities/spacing/" target="_blank">Open Bootstrap Default Spacing</a>
+                        </div>
+
+                        <div class="mb-6">
+                            <h3 class="pb-2 h4-font">How it works</h3>
+                            <p>Assign responsive-friendly <code>margin</code> or <code>padding</code> values to an
+                                element or a subset of its sides with shorthand classes. Includes support for
+                                individual properties, all properties, and vertical and horizontal properties. Classes
+                                are built from Scss mixins Sass from .10rem to 100rem.</p>
+                        </div>
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05">
+                            <h3 class="pb-2 h4-font">Spacer Class Reference</h3>
+                            <div class="mb-6">
+                                <div class="card card-body mb-2">
+                                    <div class="mb-3">
+                                        <h6 class="title-decorative">Spacer for sections</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.space</code></dt>
+                                            <dd class="col-8">Apply padding at the top and bottom of the element. </dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.space--2</code></dt>
+                                            <dd class="col-8">Apply a little more padding than <code>.space</code> at
+                                                the top and bottom of the element. </dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.space--3</code></dt>
+                                            <dd class="col-8">Apply more padding than <code>.space--2</code> at the
+                                                top and bottom of the element. </dd>
+                                        </dl>
+
+                                        <hr>
+
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.space--top</code></dt>
+                                            <dd class="col-8">Apply padding at the top of the element. </dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.space--top--2</code></dt>
+                                            <dd class="col-8">Apply a little more padding than <code>.space--top</code> at the top of the element. </dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.space--top--3</code></dt>
+                                            <dd class="col-8">Apply more padding than <code>.space--top--2</code> at
+                                                the top of the element. </dd>
+                                        </dl>
+
+                                        <hr>
+
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.space--bottom</code></dt>
+                                            <dd class="col-8">Apply padding at the bottom of the element. </dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.space-bottom---2</code></dt>
+                                            <dd class="col-8">Apply a little more padding than <code>.space--bottom</code> at the bottom of the element. </dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.space-bottom--3</code></dt>
+                                            <dd class="col-8">Apply more padding than <code>.space--bottom--2</code> at the bottom of the element. </dd>
+                                        </dl>
+                                    </div>
+                                    <!-- end of item -->
+                                </div>
+                                <!-- enf of group -->
+                                <div class="card card-body mb-2">
+                                    <div class="mb-3">
+                                        <h6 class="title-decorative">Margin and Padding for elements</h6>
+                                        <p class="mb-2">The classes are named using the format
+                                            {property}{sides}-{size}</p>
+                                        <hr>
+                                        <div>
+                                            <p class="lead">Where <code>property</code> is one of:</p>
+                                            <ul>
+                                                <li><code class="highlighter-rouge">m</code> - for classes that set
+                                                    <code class="highlighter-rouge">margin</code></li>
+                                                <li><code class="highlighter-rouge">p</code> - for classes that set
+                                                    <code class="highlighter-rouge">padding</code></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <p class="lead">Where <code>sides</code> is one of:</p>
+                                            <ul>
+                                                <ul>
+                                                    <li><code class="highlighter-rouge">t</code> - for classes that set
+                                                        <code class="highlighter-rouge">margin-top</code> or <code class="highlighter-rouge">padding-top</code></li>
+                                                    <li><code class="highlighter-rouge">b</code> - for classes that set
+                                                        <code class="highlighter-rouge">margin-bottom</code> or <code class="highlighter-rouge">padding-bottom</code></li>
+                                                    <li><code class="highlighter-rouge">l</code> - for classes that set
+                                                        <code class="highlighter-rouge">margin-left</code> or <code class="highlighter-rouge">padding-left</code></li>
+                                                    <li><code class="highlighter-rouge">r</code> - for classes that set
+                                                        <code class="highlighter-rouge">margin-right</code> or <code class="highlighter-rouge">padding-right</code></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p class="lead">Where <code>size</code> is one of:</p>
+                                            <ul>
+                                                <ul>
+                                                    <li><code>1</code> - for classes that eliminate the <code>margin</code>
+                                                        or <code>padding</code> by setting it to <code>10px</code></li>
+
+                                                    <li><code>2</code> - for classes that eliminate the <code>margin</code>
+                                                        or <code>padding</code> by setting it to <code>20px</code></li>
+
+                                                    <li><code>3</code> - for classes that eliminate the <code>margin</code>
+                                                        or <code>padding</code> by setting it to <code>30px</code></li>
+
+                                                    <li><code>4</code> - for classes that eliminate the <code>margin</code>
+                                                        or <code>padding</code> by setting it to <code>40px</code></li>
+
+                                                    <li><code>5</code> - for classes that eliminate the <code>margin</code>
+                                                        or <code>padding</code> by setting it to <code>50px</code></li>
+
+                                                    <li><code>6</code> - for classes that eliminate the <code>margin</code>
+                                                        or <code>padding</code> by setting it to <code>60px</code></li>
+
+                                                    <li><code>7</code> - for classes that eliminate the <code>margin</code>
+                                                        or <code>padding</code> by setting it to <code>70px</code></li>
+
+                                                    <li><code>8</code> - for classes that eliminate the <code>margin</code>
+                                                        or <code>padding</code> by setting it to <code>80px</code></li>
+
+                                                    <li><code>9</code> - for classes that eliminate the <code>margin</code>
+                                                        or <code>padding</code> by setting it to <code>90px</code></li>
+
+                                                    <li><code>10</code> - for classes that eliminate the <code>margin</code>
+                                                        or <code>padding</code> by setting it to <code>100px</code></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- end of group -->
+                            </div>
+                            <!-- end of cards -->
+
+                            <div>
+                                <h3 class="pb-2 h4-font">Example</h3>
+                                <section class="space bg-dark">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-10 mx-auto d-flex flex-column flex-md-row justify-content-between text-center ">
+                                                <span class="mb-3 mb-md-0"><img src="img/partner-logo-v3-1.png" alt="client"></span>
+                                                <span class="mb-3 mb-md-0"><img src="img/partner-logo-v3-2.png" alt="client"></span>
+                                                <span class="mb-3 mb-md-0"><img src="img/partner-logo-v3-3.png" alt="client"></span>
+                                                <span class="mb-3 mb-md-0"><img src="img/partner-logo-v3-4.png" alt="client"></span>
+                                                <span class="mb-3 mb-md-0"><img src="img/partner-logo-v3-5.png" alt="client"></span>
+                                            </div>
+                                            <!-- end of col -->
+                                        </div>
+                                        <!-- end of row -->
+                                    </div>
+                                    <!-- end of container -->
+                                </section>
+
+                                <div class="mb-6">
+                                    <div class="highlight">
+                                        <pre><code class="language-html" data-lang="html">
+                                                &lt;section class=&quot;space bg-dark&quot;&gt;
+                                                &lt;div class=&quot;container&quot;&gt;
+                                                    &lt;div class=&quot;row&quot;&gt;
+                                                        &lt;div class=&quot;col-12 col-lg-10 mx-auto d-flex flex-column flex-md-row justify-content-between text-center&quot;&gt;
+                                                            &lt;span class=&quot;mb-3 mb-md-0&quot;&gt;&lt;img src=&quot;img/logo-1.png&quot; alt=&quot;client&quot;&gt;&lt;/span&gt;
+                                                            &lt;span class=&quot;mb-3 mb-md-0&quot;&gt;&lt;img src=&quot;img/logo-2.png&quot; alt=&quot;client&quot;&gt;&lt;/span&gt;
+                                                            &lt;span class=&quot;mb-3 mb-md-0&quot;&gt;&lt;img src=&quot;img/logo-3.png&quot; alt=&quot;client&quot;&gt;&lt;/span&gt;
+                                                            &lt;span class=&quot;mb-3 mb-md-0&quot;&gt;&lt;img src=&quot;img/logo-4.png&quot; alt=&quot;client&quot;&gt;&lt;/span&gt;
+                                                            &lt;span class=&quot;mb-3 mb-md-0&quot;&gt;&lt;img src=&quot;img/logo-5.png&quot; alt=&quot;client&quot;&gt;&lt;/span&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;!-- end of col --&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;!-- end of row --&gt;
+                                                &lt;/div&gt;
+                                                &lt;!-- end of container --&gt;
+                                            &lt;/section&gt;
+                                        </code></pre>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="py-3 pl-2">
+                                        <span class="icon--lg bg-color--primary color--white rounded--full mx-1">
+                                            <i class="icon icon-key"></i>
+                                        </span>
+                                        <span class="icon--lg bg-color--primary color--white rounded--full mx-1">
+                                            <i class="icon icon-logo-dropbox"></i>
+                                        </span>
+                                        <span class="icon--lg bg-color--primary color--white rounded--full mx-1">
+                                            <i class="icon icon-logo-dribbble"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="mb-6">
+                                    <div class="highlight">
+                                        <pre><code class="language-html" data-lang="html">
+                                                &lt;div class=&quot;card&quot;&gt;
+                                                &lt;div class=&quot;py-3 pl-2&quot;&gt;
+                                                    &lt;span class=&quot;icon--lg bg-color--primary color--white rounded--full mx-1&quot;&gt;
+                                                        &lt;i class=&quot;icon icon-key&quot;&gt;&lt;/i&gt;
+                                                    &lt;/span&gt;
+                                                    &lt;span class=&quot;icon--lg bg-color--primary color--white rounded--full mx-1&quot;&gt;
+                                                        &lt;i class=&quot;icon icon-logo-dropbox&quot;&gt;&lt;/i&gt;
+                                                    &lt;/span&gt;
+                                                    &lt;span class=&quot;icon--lg bg-color--primary color--white rounded--full mx-1&quot;&gt;
+                                                        &lt;i class=&quot;icon icon-logo-dribbble&quot;&gt;&lt;/i&gt;
+                                                    &lt;/span&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                                    </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of group -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

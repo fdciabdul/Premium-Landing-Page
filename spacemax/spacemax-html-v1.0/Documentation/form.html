@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceMax - Form</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- fonts and icons -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color-black.png" alt="brand-logo" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                            <li class="nav-title">Components</li>
+                            <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                            <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                            <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                            <li class="nav-item"><a href="chart.html" class="nav-link">Chart</a></li>
+                            <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li></li>
+                            <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                            <li class="nav-item active"><a href="form.html" class="nav-link">Form</a></li>
+                            <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                            <li class="nav-item"><a href="dropdown.html" class="nav-link">Dropdown Module</a></li>
+                            <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player Buttons</a></li>
+                            <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                            <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                        </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Template Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="template-options.html" class="nav-link">SpaceMax  template options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </aside>
+        <!-- =========== End of  Sidebar ============ -->
+
+        <!-- =========== Start of Right Sidebar ============ -->
+        <nav class="navbar navbar-light sidebar" id="sidebar">
+            <div class="inner">
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#item-1">SpaceMax Form</a>
+                    <a class="nav-link" href="#item-2">Newsletter Form V1</a>
+                    <a class="nav-link" href="#item-3">Newsletter Form V2</a>
+                    <a class="nav-link" href="#item-4">Newsletter Form V3</a>
+                    <a class="nav-link" href="#item-5">Newsletter Form V4</a>
+                    <a class="nav-link" href="#item-6">Newsletter Form V5</a>
+                    <a class="nav-link" href="#item-7">Newsletter Form V6</a>
+                    <a class="nav-link" href="#item-8">Contact Form</a>
+                </nav>
+            </div>
+        </nav>
+        <!-- =========== End of Right Sidebar ============ -->
+        <main class="main documentation section--light">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1">
+                        <!-- Getting started -->
+                        <div class="content-title mb-3 pb-3 border-bottom">
+                            <h1 class="h3-font mb-1">Forms</h1>
+                            <p class="lead font-w--400 mb-3">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+                            <a class="btn-text-hover" href="http://getbootstrap.com/docs/4.3/components/forms" target="_blank">Open
+                                Bootstrap Docs</a>
+                        </div>
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-1">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Default Form</h4>
+                                <hr>
+                                <div class="container mx-0">                                
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-md-6 mb-md-0">
+                                            <form class="form">
+                                                <div class="form-group">
+                                                  <label>Email address</label>
+                                                  <input type="email" class="form-control" placeholder="Enter your email">
+                                                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label>Password</label>
+                                                  <input type="password" class="form-control" placeholder="Password">
+                                                </div>
+                                                <button type="submit" class="btn btn-size--md btn-bg--primary">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &lt;form&gt;
+                                            &lt;div class=&quot;form-group&quot;&gt;
+                                                &lt;label&gt;Email address&lt;/label&gt;
+                                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your email&quot;&gt;
+                                                &lt;small class=&quot;form-text text-muted&quot;&gt;We&apos;ll never share your email with anyone else.&lt;/small&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;form-group&quot;&gt;
+                                                &lt;label&gt;Password&lt;/label&gt;
+                                                &lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Password&quot;&gt;
+                                            &lt;/div&gt;
+                                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-size--md btn-bg--primary&quot;&gt;Submit&lt;/button&gt;
+                                        &lt;/form&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-2">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Newsletter Form V1</h4>
+                                <hr>
+                                <div class="container mx-0">                                
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-md-10 col-xl-9 mx-auto">
+                                            <div class="newsletter-form form--v8 bg-white py-6 py-lg-8 box-shadow--5 text-center">
+                                                <div class="mb-5 px-3">
+                                                    <h2 class="h3-font mb-1">Start building your website now</h2>
+                                                    <p>Just sign up and choose a theme from out library to get started</p>
+                                                </div>
+                                                <!-- end of title -->
+                                                <div class="col-12 col-md-10 col-lg-8 mx-md-auto">
+                                                    <form action="#" class="form bg-color--white-opacity--10 rounded--05 p-1">
+                                                        <div class="input-group d-flex">
+                                                            <input type="email" class="form-control rounded--none" placeholder="Enter your email" required>
+                                                            <button class="btn btn-hover--splash btn-bg--primary rounded--none" type="submit"><span class="btn__text font-w--500">Get Started</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <!-- end of from -->
+                                                </div>
+                                            </div>
+                                            <!-- end of form wrapper-->
+                                        </div>
+                                        <!-- end of body col -->
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &lt;div class=&quot;newsletter-form form--v8 bg-white py-6 py-lg-8 box-shadow--5 text-center&quot;&gt;
+                                            &lt;div class=&quot;mb-5 px-3&quot;&gt;
+                                                &lt;h2 class=&quot;h3-font mb-1&quot;&gt;Start building your website now&lt;/h2&gt;
+                                                &lt;p&gt;Just sign up and choose a theme from out library to get started&lt;/p&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- end of title --&gt;
+                                            &lt;div class=&quot;col-12 col-md-10 col-lg-8 mx-md-auto&quot;&gt;
+                                                &lt;form action=&quot;#&quot; class=&quot;form bg-color--white-opacity--10 rounded--05 p-1&quot;&gt;
+                                                    &lt;div class=&quot;input-group d-flex&quot;&gt;
+                                                        &lt;input type=&quot;email&quot; class=&quot;form-control rounded--none&quot; placeholder=&quot;Enter your email&quot; required&gt;
+                                                        &lt;button class=&quot;btn btn-hover--splash btn-bg--primary rounded--none&quot; type=&quot;submit&quot;&gt;&lt;span class=&quot;btn__text font-w--500&quot;&gt;Get Started&lt;/span&gt;&lt;/button&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/form&gt;
+                                                &lt;!-- end of from --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- end of form wrapper --&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-3">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Newsletter Form V2</h4>
+                                <hr>
+                                <div class="container mx-0">                                
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-sm-8 col-lg-5 pl-lg-0 mx-auto">
+                                            <div class="newsletter-form form--v2 border--around bg-white rounded--10 box-shadow--3 text-center px-3 pb-5">
+                                                <div class="pt-4 pb-5">
+                                                    <h2 class="h3-font mb-1">Subscribe our newsletter</h2>
+                                                    <p class="text-color--400">By subscribing our newsletter you will know all the latest updates about blockchain from us.</p>
+                                                </div>
+                                                <!-- end of title -->
+                                                <form action="#" class="form">
+                                                    <div class="input-group d-flex">
+                                                        <input type="email" class="form-control" placeholder="Enter your email" required="">
+                                                        <button class="btn btn-hover--splash btn-bg--cta--3" type="submit"><span class="btn__text"><i class="icon icon-arrow-right"></i></span></button>
+                                                    </div>
+                                                </form>
+                                                <!-- end of from -->
+                                            </div>
+                                            <!-- end of from wrapper-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &lt;div class=&quot;newsletter-form form--v2 border--around bg-white rounded--10 box-shadow--3 text-center px-3 pb-5&quot;&gt;
+                                            &lt;div class=&quot;pt-4 pb-5&quot;&gt;
+                                                &lt;h2 class=&quot;h3-font mb-1&quot;&gt;Subscribe our newsletter&lt;/h2&gt;
+                                                &lt;p class=&quot;text-color--400&quot;&gt;By subscribing our newsletter you will know all the latest updates about blockchain from us.&lt;/p&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- end of title --&gt;
+                                            &lt;form action=&quot;#&quot; class=&quot;form&quot;&gt;
+                                                &lt;div class=&quot;input-group d-flex&quot;&gt;
+                                                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your email&quot; required=&quot;&quot;&gt;
+                                                    &lt;button class=&quot;btn btn-hover--splash btn-bg--cta--3&quot; type=&quot;submit&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;
+                                                &lt;/div&gt;
+                                            &lt;/form&gt;
+                                            &lt;!-- end of from --&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- end of from wrapper--&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-4">
+                            <div class="p-3">
+                            <h4 class="h5-font mb-2">Newsletter Form V3</h4>
+                            <hr>
+                                <div class="container mx-0">                                
+                                    <div class="row mb-4">
+                                        <div class="col-12">
+                                            <div class="newsletter-form form--v3 position-relative d-lg-flex align-items-center bg-color--primary rounded--10 py-4 p-lg-4 p-xl-7">
+                                                <div class="svg-shape--top--right h-100">
+                                                    <img src="img/layout/diagonal-shape-7.svg" alt="wave" class="svg h-100">
+                                                </div>
+                                                <!-- end of bg -->
+                                                <div class="col-12 col-lg-6 pr-lg-5 mb-3 mb-lg-0 text-center text-lg-left reveal">
+                                                    <h2 class="h3-font color--white">Subscribe our newsletter and get useful information every week</h2>
+                                                </div>
+                                                <!-- end of title -->
+                                                <div class="col-12 col-md-10 col-lg-6 mx-md-auto">
+                                                    <form action="#" class="form bg-color--white-opacity--10 rounded--05 p-1 reveal">
+                                                        <div class="input-group d-flex">
+                                                            <input type="email" class="form-control" placeholder="Enter your email" required="">
+                                                            <button class="btn btn-hover--splash btn-bg--primary" type="submit"><span class="btn__text"><i class="icon icon-arrow-right"></i></span></button>
+                                                        </div>
+                                                    </form>
+                                                    <!-- end of from -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &lt;div class=&quot;container mx-0&quot;&gt;                                
+                                        &lt;div class=&quot;row mb-4&quot;&gt;
+                                            &lt;div class=&quot;col-12&quot;&gt;
+                                                &lt;div class=&quot;newsletter-form form--v3 position-relative d-lg-flex align-items-center bg-color--primary rounded--10 py-4 p-lg-4 p-xl-7&quot;&gt;
+                                                    &lt;div class=&quot;svg-shape--top--right h-100&quot;&gt;
+                                                        &lt;img src=&quot;img/layout/diagonal-shape-7.svg&quot; alt=&quot;wave&quot; class=&quot;svg h-100&quot;&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;!-- end of bg --&gt;
+                                                    &lt;div class=&quot;col-12 col-lg-6 pr-lg-5 mb-3 mb-lg-0 text-center text-lg-left reveal&quot;&gt;
+                                                        &lt;h2 class=&quot;h3-font color--white&quot;&gt;Subscribe our newsletter and get useful information every week&lt;/h2&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;!-- end of title --&gt;
+                                                    &lt;div class=&quot;col-12 col-md-10 col-lg-6 mx-md-auto&quot;&gt;
+                                                        &lt;form action=&quot;#&quot; class=&quot;form bg-color--white-opacity--10 rounded--05 p-1 reveal&quot;&gt;
+                                                            &lt;div class=&quot;input-group d-flex&quot;&gt;
+                                                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your email&quot; required=&quot;&quot;&gt;
+                                                                &lt;button class=&quot;btn btn-hover--splash btn-bg--primary&quot; type=&quot;submit&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/form&gt;
+                                                        &lt;!-- end of from --&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-5">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Newsletter Form V4</h4>
+                                <hr>
+                                <div class="container mx-0">                                
+                                    <div class="row">
+                                        <div class="col-12 col-sm-9 col-lg-6 mb-4 mb-lg-6 mx-auto text-center reveal">
+                                            <h2 class="mb-2 font-size--40 font-w--700">Sign up for the latest updates.</h2>
+                                            <p>SpaceMax is designed to pioneer the plasma architecture, the leading scalability solution for Ethereum is a stakeholder and infinitely scalable..</p>
+                                        </div>
+                                    </div>
+                                    <!-- end of section title row -->
+                                    
+                                    <div class="row mb-8">
+                                        <div class="col-12 col-md-10 col-lg-6 mx-md-auto">
+                                            <div class="form--v4 reveal">
+                                                <form action="#" class="form bg-color--primary rounded--05">
+                                                    <div class="input-group d-flex">
+                                                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                                                        <button class="btn btn-hover--splash btn-bg--primary" type="submit"><span class="btn__text"><i class="icon icon-arrow-right"></i></span></button>
+                                                    </div>
+                                                </form>
+                                                <!-- end of from -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;container&quot;&gt;                                
+                                            &lt;div class=&quot;row&quot;&gt;
+                                                &lt;div class=&quot;col-12 col-sm-9 col-lg-6 mb-4 mb-lg-6 mx-auto text-center reveal&quot;&gt;
+                                                    &lt;h2 class=&quot;mb-2 font-size--40 font-w--700&quot;&gt;Sign up for the latest updates.&lt;/h2&gt;
+                                                    &lt;p&gt;SpaceMax is designed to pioneer the plasma architecture, the leading scalability solution for Ethereum is a stakeholder and infinitely scalable..&lt;/p&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- end of section title row --&gt;
+                                            
+                                            &lt;div class=&quot;row mb-8&quot;&gt;
+                                                &lt;div class=&quot;col-12 col-md-10 col-lg-6 mx-md-auto&quot;&gt;
+                                                    &lt;div class=&quot;form--v4 reveal&quot;&gt;
+                                                        &lt;form action=&quot;#&quot; class=&quot;form bg-color--primary rounded--05&quot;&gt;
+                                                            &lt;div class=&quot;input-group d-flex&quot;&gt;
+                                                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your email&quot; required&gt;
+                                                                &lt;button class=&quot;btn btn-hover--splash btn-bg--primary&quot; type=&quot;submit&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/form&gt;
+                                                        &lt;!-- end of from --&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 mb-3 rounded--05 section--darkblue bg-color--darkblue--1" id="item-6">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2 border--bottom">Newsletter Form V5</h4>
+                                <div class="container mx-0">    
+                                    <div class="row mb-4">
+                                        <div class="form--v4">
+                                            <form action="#" class="form bg-color--white-opacity--10 rounded--05">
+                                                <div class="input-group d-flex">
+                                                    <input type="email" class="form-control" placeholder="Enter your email" required="">
+                                                    <button class="btn btn-size--md btn-hover--splash btn-bg--cta--5" type="submit"><span class="btn__text">Create Account</span></button>
+                                                </div>
+                                            </form>
+                                            <!-- end o form -->
+                                        </div>
+                                        <!-- end o form wrapper -->
+                                    </div>                            
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;form--v4&quot;&gt;
+                                            &lt;form action=&quot;#&quot; class=&quot;form bg-color--white-opacity--10 rounded--05&quot;&gt;
+                                                &lt;div class=&quot;input-group d-flex&quot;&gt;
+                                                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your email&quot; required=&quot;&quot;&gt;
+                                                    &lt;button class=&quot;btn btn-size--md btn-hover--splash btn-bg--cta--5&quot; type=&quot;submit&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Create Account&lt;/span&gt;&lt;/button&gt;
+                                                &lt;/div&gt;
+                                            &lt;/form&gt;
+                                            &lt;!-- end o form --&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- end o form wrapper --&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-7">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Newsletter Form V6</h4>
+                                <hr>
+                                <div class="container mx-0">                                
+                                    <div class="row justify-content-between align-items-center text-center text-md-left border px-3 py-5 mb-4 rounded--03">
+                                        <div class="col-12 col-md-5 col-lg-4 mb-4 mb-md-0 reveal">
+                                            <h2 class="h3-font font-w--700 mb-1">Join us today!</h2>
+                                            <p>Buy your cryptocurrency today to begin using the future of money.</p>
+                                        </div>
+                                        <!-- end of content col -->
+                                        <div class="col-12 col-md-7 col-lg-6">
+                                            <div class="form--v7 reveal">
+                                                <form action="#" class="form border--around rounded--05">
+                                                    <div class="input-group d-flex">
+                                                        <input type="email" class="form-control" placeholder="Enter your email" required="">
+                                                        <button class="btn btn-size--md btn-hover--splash btn-bg--primary" type="submit"><span class="btn__text">Get Started Now</span></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!-- end of from -->
+                                        </div>
+                                        <!-- end of form col -->
+                                    </div>
+                                    <!-- end of row -->
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;row justify-content-between align-items-center text-center text-md-left&quot;&gt;
+                                            &lt;div class=&quot;col-12 col-md-5 col-lg-4 mb-4 mb-md-0 reveal&quot;&gt;
+                                                &lt;h2 class=&quot;h3-font font-w--700 mb-1&quot;&gt;Join us today!&lt;/h2&gt;
+                                                &lt;p&gt;Buy your cryptocurrency today to begin using the future of money.&lt;/p&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- end of content col --&gt;
+                                            &lt;div class=&quot;col-12 col-md-7 col-lg-6&quot;&gt;
+                                                &lt;div class=&quot;form--v7 reveal&quot;&gt;
+                                                    &lt;form action=&quot;#&quot; class=&quot;form border--around rounded--05&quot;&gt;
+                                                        &lt;div class=&quot;input-group d-flex&quot;&gt;
+                                                            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your email&quot; required=&quot;&quot;&gt;
+                                                            &lt;button class=&quot;btn btn-size--md btn-hover--splash btn-bg--primary&quot; type=&quot;submit&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Get Started Now&lt;/span&gt;&lt;/button&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/div&gt;
+                                                &lt;!-- end of from --&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- end of form col --&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- end of row --&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-8">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Contact Form</h4>
+                                <hr>
+                                <div class="container mx-0">                                
+                                    <div class="row border px-3 py-5 mb-4 rounded--05">
+                                        <div class="col-12 col-lg-6">
+                                            <form action="#" class="form">
+                                                <div class="form-group form-row">
+                                                    <div class="col-12 col-md-6 form-group mb-md-0">
+                                                        <input type="text" class="form-control" placeholder="Your name" required="">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <input type="email" class="form-control" placeholder="Your email" required="">
+                                                    </div>
+                                                </div>
+                                                <!-- end of form row -->
+                                                <div class="form-group form-row">
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" placeholder="Subject">
+                                                    </div>
+                                                </div>
+                                                <!-- end of form row -->
+                                                <div class="form-group form-row mb-4">
+                                                    <div class="col">
+                                                        <textarea rows="6" class="form-control" placeholder="Write your message" required=""></textarea>
+                                                    </div>
+                                                </div>
+                                                <!-- end of form row -->
+                                                <button class="btn btn-size--md btn-border btn-border--color--primary color--primary btn-hover--primary" type="submit"><span class="btn__text">Send Message</span></button>
+                                            </form>
+                                            <!-- end of form -->
+                                        </div>
+                                    </div>
+                                    <!-- end of row -->
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;form action=&quot;#&quot; class=&quot;form&quot;&gt;
+                                            &lt;div class=&quot;form-group form-row&quot;&gt;
+                                                &lt;div class=&quot;col-12 col-md-6 form-group mb-md-0&quot;&gt;
+                                                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Your name&quot; required=&quot;&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+                                                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Your email&quot; required=&quot;&quot;&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- end of form row --&gt;
+                                            &lt;div class=&quot;form-group form-row&quot;&gt;
+                                                &lt;div class=&quot;col&quot;&gt;
+                                                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Subject&quot;&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- end of form row --&gt;
+                                            &lt;div class=&quot;form-group form-row mb-4&quot;&gt;
+                                                &lt;div class=&quot;col&quot;&gt;
+                                                    &lt;textarea rows=&quot;6&quot; class=&quot;form-control&quot; placeholder=&quot;Write your message&quot; required=&quot;&quot;&gt;&lt;/textarea&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- end of form row --&gt;
+                                            &lt;button class=&quot;btn btn-size--md btn-border btn-border--color--primary color--primary btn-hover--primary&quot; type=&quot;submit&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Send Message&lt;/span&gt;&lt;/button&gt;
+                                        &lt;/form&gt;
+                                        &lt;!-- end of form --&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

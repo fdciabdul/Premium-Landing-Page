@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceMax - Dropdown Module</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- fonts and icons -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color-black.png" alt="brand-logo" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="chart.html" class="nav-link">Chart</a></li>
+                        <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li></li>
+
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item active"><a href="dropdown.html" class="nav-link">Dropdown Module</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player Buttons</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                            <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Template Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="template-options.html" class="nav-link">SpaceMax template
+                                options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- =========== End of Sidebar ============ -->
+    
+    <!-- =========== Start of Right Sidebar ============ -->
+    <nav class="navbar navbar-light sidebar" id="sidebar">
+        <div class="inner">
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Dropdown Light</a>
+                <a class="nav-link" href="#item-2">Dark + left alignment</a>
+                <a class="nav-link" href="#item-3">Dropdown Dark Blue</a>
+                <a class="nav-link" href="#item-4">Class Reference</a>
+            </nav>
+        </div>
+    </nav>
+    <!-- =========== End of Right Sidebar ============ -->
+    
+    <main class="main documentation section--light">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1">
+                        <!-- Getting started -->
+                        <div class="content-title mb-3 pb-3 border-bottom">
+                            <h1 class="h3-font mb-1">Dropdown Module</h1>
+                        </div>
+
+                        <div class="box-shadow--3 mb-3 rounded--05">
+                            
+                            <div class="bg-color--primary-light--1 p-2 border-bottom border--top">
+                                <h3 class="h4-font ">Dropdown Module Options</h3>
+                            </div>
+                            <div class="p-3">
+                                <div class="card p-3 section--dark bg-color--dark--1 d-block p-4 bg-color--dark--1 p-6 mb-3" id="item-1">
+                                    <div class="text-center border--around py-3 rounded--05">
+                                        <h3 class="h6-font color--white mb-3">Dropdown Light - Right alignment</h3>
+                                        <div class="dropdown-module dropdown-module--right dropdown-module--light d-inline-block position-relative ml-1 ml-sm-2">
+
+                                            <button class="dropdown-module__toggler" type="button">
+                                                <span class="flag-image">
+                                                    <img src="img/flag/uk.svg" alt="flag" class="svg">
+                                                </span>
+                                            </button>
+                                            <!-- end of language selector button -->
+
+                                            <ul class="dropdown-module-list">
+                                                <li>
+                                                    <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/uk.svg" alt="flag" class="svg"></span>English</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/spain.svg" alt="flag" class="svg"></span>Español</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/russia.svg" alt="flag" class="svg"></span>Русский</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/turkey.svg" alt="flag" class="svg"></span>Türk</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="mt-3 mb-2 h6-font color--white">Markup example:</h3>
+
+                                    <div class="highlight mt-3">
+                                        <pre><code class="language-html" data-lang="html">
+                                                &lt;div class=&quot;dropdown-module dropdown-module--right dropdown-module--light d-inline-block position-relative ml-1 ml-sm-2&quot;&gt;
+
+                                                &lt;button class=&quot;dropdown-module__toggler&quot; type=&quot;button&quot;&gt;
+                                                    &lt;span class=&quot;flag-image&quot;&gt;
+                                                        &lt;img src=&quot;img/flag/uk.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;
+                                                    &lt;/span&gt;
+                                                &lt;/button&gt;
+                                                &lt;!-- end of language selector button --&gt;
+            
+                                                &lt;ul class=&quot;dropdown-module-list&quot;&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/uk.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;English&lt;/a&gt;
+                                                    &lt;/li&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/spain.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;Espa&ntilde;ol&lt;/a&gt;
+                                                    &lt;/li&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/russia.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;&Rcy;&ucy;&scy;&scy;&kcy;&icy;&jcy;&lt;/a&gt;
+                                                    &lt;/li&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/turkey.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;T&uuml;rk&lt;/a&gt;
+                                                    &lt;/li&gt;
+                                                &lt;/ul&gt;
+                                            &lt;/div&gt;
+                    
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            <!-- end of Dropdown Light-->
+                            </div>
+                            <div>
+                                <div class="p-3">
+                                    <div class="card d-block p-4 section--dark bg-color--dark--1 p-6 mb-3" id="item-2">
+                                        <div class="text-center border--around py-3 rounded--05">
+                                                <h3 class="h6-font color--white mb-3">Dropdown Dark - left alignment</h3>
+                                            <div class="dropdown-module dropdown-module--dark d-inline-block position-relative ml-1 ml-sm-2">
+            
+                                                <button class="dropdown-module__toggler" type="button">
+                                                    <span class="flag-image">
+                                                        <img src="img/flag/uk.svg" alt="flag" class="svg">
+                                                    </span>
+                                                </button>
+                                                <!-- end of language selector button -->
+            
+                                                <ul class="dropdown-module-list">
+                                                    <li>
+                                                        <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/uk.svg" alt="flag" class="svg"></span>English</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/spain.svg" alt="flag" class="svg"></span>Español</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/russia.svg" alt="flag" class="svg"></span>Русский</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/turkey.svg" alt="flag" class="svg"></span>Türk</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-3 mb-2 h6-font color--white">Markup example:</h3>
+        
+                                        <div class="highlight mt-3">
+                                            <pre><code class="language-html" data-lang="html">
+                                                    &lt;div class=&quot;dropdown-module dropdown-module--dark d-inline-block position-relative ml-1 ml-sm-2&quot;&gt;
+        
+                                                    &lt;button class=&quot;dropdown-module__toggler&quot; type=&quot;button&quot;&gt;
+                                                        &lt;span class=&quot;flag-image&quot;&gt;
+                                                            &lt;img src=&quot;img/flag/uk.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;
+                                                        &lt;/span&gt;
+                                                    &lt;/button&gt;
+                                                    &lt;!-- end of language selector button --&gt;
+                
+                                                    &lt;ul class=&quot;dropdown-module-list&quot;&gt;
+                                                        &lt;li&gt;
+                                                            &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/uk.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;English&lt;/a&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/spain.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;Espa&ntilde;ol&lt;/a&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/russia.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;&Rcy;&ucy;&scy;&scy;&kcy;&icy;&jcy;&lt;/a&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/turkey.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;T&uuml;rk&lt;/a&gt;
+                                                        &lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;/div&gt;
+                        
+                                            </code></pre>
+                                        </div>
+                                    </div>
+                                    <!-- end of Dropdown Dark-->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="p-3">
+                                    <div class="card d-block p-4 section--dark bg-color--dark--1 p-6 mb-3" id="item-3">
+                                        <div class="text-center border--around py-3 rounded--05">
+                                            <h3 class="h6-font color--white mb-3">Dropdown Dark Blue/ Purple - Right alignment</h3>
+                                            <div class="dropdown-module dropdown-module--right dropdown-module--darkblue d-inline-block position-relative ml-1 ml-sm-2">
+            
+                                                <button class="dropdown-module__toggler" type="button">
+                                                    <span class="flag-image">
+                                                        <img src="img/flag/uk.svg" alt="flag" class="svg">
+                                                    </span>
+                                                </button>
+                                                <!-- end of language selector button -->
+            
+                                                <ul class="dropdown-module-list">
+                                                    <li>
+                                                        <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/uk.svg" alt="flag" class="svg"></span>English</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/spain.svg" alt="flag" class="svg"></span>Español</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/russia.svg" alt="flag" class="svg"></span>Русский</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-module__item d-flex align-items-center" href="#"> <span class="flag-image mr-2"><img src="img/flag/turkey.svg" alt="flag" class="svg"></span>Türk</a>
+                                                    </li>
+                                                </ul>
+                                        </div>
+                                        </div>
+                                        <h3 class="mt-3 mb-2 h6-font color--white">Markup example:</h3>
+        
+                                        <div class="highlight mt-3">
+                                            <pre><code class="language-html" data-lang="html">
+                                                    &lt;div class=&quot;dropdown-module dropdown-module--right dropdown-module--darkblue d-inline-block position-relative ml-1 ml-sm-2&quot;&gt;
+        
+                                                    &lt;button class=&quot;dropdown-module__toggler&quot; type=&quot;button&quot;&gt;
+                                                        &lt;span class=&quot;flag-image&quot;&gt;
+                                                            &lt;img src=&quot;img/flag/uk.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;
+                                                        &lt;/span&gt;
+                                                    &lt;/button&gt;
+                                                    &lt;!-- end of language selector button --&gt;
+                
+                                                    &lt;ul class=&quot;dropdown-module-list&quot;&gt;
+                                                        &lt;li&gt;
+                                                            &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/uk.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;English&lt;/a&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/spain.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;Espa&ntilde;ol&lt;/a&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/russia.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;&Rcy;&ucy;&scy;&scy;&kcy;&icy;&jcy;&lt;/a&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;a class=&quot;dropdown-module__item d-flex align-items-center&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;flag-image mr-2&quot;&gt;&lt;img src=&quot;img/flag/turkey.svg&quot; alt=&quot;flag&quot; class=&quot;svg&quot;&gt;&lt;/span&gt;T&uuml;rk&lt;/a&gt;
+                                                        &lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;/div&gt;
+        
+                                            </code></pre>
+                                        </div>
+                                    </div>
+                                    <!-- end of Dropdown Darkblue-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="card p-2 box-shadow-3 bg-color-grey mb-6" id="item-4">
+                            <div class="card-body">
+                                <h6 class="title-decorative">Additional Class Reference</h6>
+                                <hr>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-12"><code>dropdown-module--light</code></dt>
+                                    <dd></dd>
+                                    <dt class="col-12"><code>dropdown-module--dark</code></dt>
+                                    <dd></dd>
+                                    <dt class="col-12"><code>dropdown-module--darkblue</code></dt>
+                                    <dd></dd>
+                                    <dt class="col-12"><code>dropdown-module--right</code></dt>
+                                    <dd></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

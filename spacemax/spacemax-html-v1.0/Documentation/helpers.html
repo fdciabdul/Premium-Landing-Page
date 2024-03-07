@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceMax - Helpers</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- fonts and icons -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color-black.png" alt="brand-logo" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="chart.html" class="nav-link">Chart</a></li>
+                        <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li></li>
+
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="dropdown.html" class="nav-link">Dropdown Module</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player Buttons</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                        <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item active"><a href="helpers.html" class="nav-link">Template Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="template-options.html" class="nav-link">SpaceMax template options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- =========== End of Sidebar ============ -->
+    
+    <!-- =========== Start of Right Sidebar ============ -->
+    <nav class="navbar navbar-light sidebar" id="sidebar">
+        <div class="inner">
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-1" href="#item-1">Border Radius</a>
+                <a class="nav-link ml-1" href="#item-2">Opacity</a>
+                <a class="nav-link ml-1" href="#item-3">Border</a>
+                <a class="nav-link ml-1" href="#item-4">Box Shadow</a>
+                <a class="nav-link ml-1" href="#item-5">Max Width</a>
+                <a class="nav-link ml-1" href="#item-6">Width</a>
+                <a class="nav-link ml-1" href="#item-7">Height</a>
+                <a class="nav-link ml-1" href="#item-8">Z-Index</a>
+                <a class="nav-link ml-1" href="#item-9">Transition</a>
+                <a class="nav-link ml-1" href="#item-10">Position</a>
+                <a class="nav-link ml-1" href="#item-11">Overflow</a>
+            </nav>
+        </div>
+    </nav>
+    <!-- =========== End of Right Sidebar ============ -->
+        
+    <main class="main documentation section--light">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1">
+                        <!-- Getting started -->
+                        <div class="content-title mb-3 pb-3 border-bottom">
+                            <h1 class="h3-font mb-1">Helpers</h1>
+                            <p class="lead font-w--400 mb-3">SpaceMax includes a wide range of shorthand utility classes to modify an element's appearance.</p>
+                        </div>
+
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05">
+                            <h5>add any of listed classes to the html <code>element</code> to apply them.</h5>
+                            <br>
+                            <div class="highlight">
+                            <h3 class="pb-1 h6-font">Markup example:</h3>
+                                <pre><code class="language-html" data-lang="html">
+                                    &lt;div class=&quot;border-bottom-light&quot;&gt;&lt;/div&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05">
+                            <h3 class="pb-2 h4-font">CSS Class Reference</h3>
+                            <div class="card bg-color-grey mb-6">
+                                <div class="card-body">
+                                    <div class="mb-3" id="item-1">
+                                        <h6 class="title-decorative">Border Radius</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.rounded--default</code></dt>
+                                            <dd class="col-8">Sets <code>5px</code> border Radius to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.rounded--03</code></dt>
+                                            <dd class="col-8">Sets <code>3px</code> border Radius to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.rounded--05</code></dt>
+                                            <dd class="col-8">Sets <code>05px</code> border Radius to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.rounded--08</code></dt>
+                                            <dd class="col-8">Sets <code>08px</code> border Radius to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.rounded--10</code></dt>
+                                            <dd class="col-8">Sets <code>10px</code> border Radius to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.rounded--15</code></dt>
+                                            <dd class="col-8">Sets <code>15px</code> border Radius to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.rounded--full</code></dt>
+                                            <dd class="col-8">Sets <code>100px</code> border Radius to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.rounded--none</code></dt>
+                                            <dd class="col-8">Remove border aadius from the elements</dd>
+                                        </dl>
+                                    </div>
+                                    <!-- end of item -->
+                                    <div class="mb-3" id="item-2">
+                                        <h6 class="title-decorative">Opacity</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--02</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .02; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--03</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .03; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--05</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .05; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--08</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .08; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--10</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .10; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--20</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .20; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--30</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .30; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--40</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .40; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--50</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .50; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--60</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .60; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--70</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .70; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--80</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .80; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--90</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .90; </code> to the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.opacity--100</code></dt>
+                                            <dd class="col-8">Sets <code> opacity: .100; </code> to the element</dd>
+                                        </dl>
+                                    </div>
+                                    <!-- end of item -->
+            
+                                    <div class="mb-3" id="item-3">
+                                        <h6 class="title-decorative">Border</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.border--none</code></dt>
+                                            <dd class="col-8">Remove any border from the elements</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.border--around</code></dt>
+                                            <dd class="col-8"> Sets <code>1px</code> border all around the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.border--bottom</code></dt>
+                                            <dd class="col-8">Sets <code>1px</code> border bottom of the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.border--top</code></dt>
+                                            <dd class="col-8">Sets <code>1px</code> border top of the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.border--right</code></dt>
+                                            <dd class="col-8">Sets <code>1px</code> border right of the element</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.border--left</code></dt>
+                                            <dd class="col-8">Sets <code>1px</code> border left of the element</dd>
+                                        </dl>
+    
+                                    </div>
+                                    
+                                    <div class="mb-3" id="item-4">
+                                        <h6 class="title-decorative">Box Shadow</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-12"><code>.box-shadow--1</code></dt>
+                                            <dt class="col-12"><code>.box-shadow--2</code></dt>
+                                            <dt class="col-12"><code>.box-shadow--3</code></dt>
+                                            <dt class="col-12"><code>.box-shadow--4</code></dt>
+                                            <dt class="col-12"><code>.box-shadow--5</code></dt>
+                                            <dt class="col-12"><code>.box-shadow--6</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dd class="col-12">Apply box Shadow to the element. Different class will generate different box shadow</dd>
+                                        </dl>
+                                    </div>
+                                    <!-- end of item -->
+                                    <div class="mb-3" id="item-5">
+                                        <h6 class="title-decorative">Max Width</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.max-w--320</code></dt>
+                                            <dd class="col-8">Restrict the element width to <code>320px</code></dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.max-w--350</code></dt>
+                                            <dd class="col-8">Restrict the element width to <code>350px</code></dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.max-w--400</code></dt>
+                                            <dd class="col-8">Restrict the element width to <code>400px</code></dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.max-w--500</code></dt>
+                                            <dd class="col-8">Restrict the element width to <code>500px</code></dd>
+                                        </dl>
+                                    </div>
+                                    <!-- end of item -->
+                                    <div class="mb-3" id="item-6">
+                                        <h6 class="title-decorative">Width</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.w-80</code></dt>
+                                            <dd class="col-8">Apply <code>80%</code> width of total area</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.w-85</code></dt>
+                                            <dd class="col-8">Apply <code>85%</code> width of total area</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.max-w-90</code></dt>
+                                            <dd class="col-8">Apply <code>90%</code> width of total area</dd>
+                                        </dl>
+                                    </div>
+                                    <!-- end of item -->
+                                    <div class="mb-3" id="item-7">
+                                        <h6 class="title-decorative">Height</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.h-100vh</code></dt>
+                                            <dd class="col-8">Sets the height of the element <code>100vh</code></dd>
+                                        </dl>
+                                    </div>
+                                    <!-- end of item -->
+                                    <div class="mb-3" id="item-8">
+                                        <h6 class="title-decorative">Z-Index</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.z-index1</code></dt>
+                                            <dd class="col-8">Sets <code>z-index: 1;</code></dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.z-index2</code></dt>
+                                            <dd class="col-8">Sets <code>z-index: 2;</code></dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.z-index3</code></dt>
+                                            <dd class="col-8">Sets <code>z-index: 3;</code></dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.z-index-1</code></dt>
+                                            <dd class="col-8">Sets <code>z-index: -1;</code></dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.z-index-2</code></dt>
+                                            <dd class="col-8">Sets <code>z-index: -2;</code></dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.z-index-3</code></dt>
+                                            <dd class="col-8">Sets <code>z-index: -3;</code></dd>
+                                        </dl>
+                                    </div>
+                                    <!-- enf of group -->
+                                    <div class="mb-3" id="item-9">
+                                        <h6 class="title-decorative">Transition</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.transition-default</code></dt>
+                                            <dd class="col-8">Apply <code>.3s</code> transition to the element</code></dd>
+                                        </dl>
+                                    </div>
+                                    <!-- enf of group -->
+    
+                                    <div class="mb-3" id="item-10">
+                                        <h6 class="title-decorative">Position</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-top</code></dt>
+                                            <dd class="col-8">Apply to a element to position the element at the top of the section</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-bottom</code></dt>
+                                            <dd class="col-8">Apply to a element to position the element at the bottom of the section</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-right</code></dt>
+                                            <dd class="col-8">position the element to the right hand coner of the section</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-left</code></dt>
+                                            <dd class="col-8">position the element to the left hand coner of the section</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-bottom-left</code></dt>
+                                            <dd class="col-8">position the element to the bottom left hand coner of the section</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-bottom-right</code></dt>
+                                            <dd class="col-8">position the element to the bottom right hand coner of the section</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-top-right</code></dt>
+                                            <dd class="col-8">position the element to the top right hand coner of the section</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-top-left</code></dt>
+                                            <dd class="col-8">position the element to the top left hand coner of the section</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-center</code></dt>
+                                            <dd class="col-8">position the element center of the section</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-horizon-center</code></dt>
+                                            <dd class="col-8">position the element horizontally center of the section</dd>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.pos-abs-vertical-center</code></dt>
+                                            <dd class="col-8">position the element vertically center of the section</dd>
+                                        </dl>
+                                    </div>
+                                    <!-- end of item -->
+                                    <div class="mb-3" id="item-11">
+                                        <h6 class="title-decorative">Overflow</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.hidden</code></dt>
+                                            <dd class="col-8">Sets overflow attribute to hidden</dd>
+                                        </dl>
+                                    </div>
+                                    <!-- enf of group -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

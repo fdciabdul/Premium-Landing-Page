@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceMax - Cards</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- fonts and icons -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color-black.png" alt="brand-logo" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item active"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="chart.html" class="nav-link">Chart</a></li>
+                        <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li></li>
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="dropdown.html" class="nav-link">Dropdown Module</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player Buttons</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                            <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                        
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Template Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="template-options.html" class="nav-link">SpaceMax  template options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- =========== End of  Sidebar ============ -->
+
+    <!-- =========== Start of Right Sidebar ============ -->
+    <nav class="navbar navbar-light sidebar" id="sidebar">
+        <div class="inner">
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">SpaceMax Card</a>
+                <nav class="nav nav-pills nav-pills--sub flex-column">
+                    <a class="nav-link ml-1" href="#item-1-1">Card Style One</a>
+                    <a class="nav-link ml-1" href="#item-1-2">Card Style Two</a>
+                    <a class="nav-link ml-1" href="#item-1-3">Card Style Three</a>
+                    <a class="nav-link ml-1" href="#item-1-4">Card Style Four</a>
+                    <a class="nav-link ml-1" href="#item-1-5">Card Style Five</a>
+                    <a class="nav-link ml-1" href="#item-1-6">Card Style Six</a>
+                    <a class="nav-link ml-1" href="#item-1-7">Card Style Seven</a>
+                    <a class="nav-link ml-1" href="#item-1-8">Card Style Eight</a>
+                    <a class="nav-link ml-1" href="#item-1-9">Card Style Nine</a>
+                </nav>
+                <a class="nav-link" href="#item-2">Card Hover Style</a>
+                <a class="nav-link" href="#item-3">Class Reference</a>
+            </nav>
+        </div>
+    </nav>
+    <!-- =========== End of Right Sidebar ============ -->
+
+    <main class="main documentation section--light">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1">
+                        <!-- Getting started -->
+                        <div class="content-title mb-3 pb-3 border-bottom">
+                            <h1 class="h3-font mb-1">Cards</h1>
+                            <p class="lead font-w--400 mb-3">SpaceMax's cards provide a flexible and extensible content container with multiple variants and options. </p>
+                            <a class="btn-text-hover" href="http://getbootstrap.com/docs/4.3/components/card" target="_blank">Open
+                                Bootstrap Docs</a>
+                        </div>
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-1">
+                            <div class="bg-color--primary-light--1 p-2 border-bottom border--top">
+                                <h3 class="h4-font ">SpaceMax Cards</h3>
+                            </div>
+                            <!-- end of title -->
+                            <div class="p-3"  id="item-1-1">
+                                <h4 class="h5-font mb-2">Variation one</h4>
+                                <hr>
+                                <div class="container mx-0">                                
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                            <div class="card card-hover--shadow p-3 rounded--none h-100">
+                                                <span class="mb-3"><img src="img/icon-device.svg" alt="icon-device"></span>
+                                                <h3 class="font-size--20 mb-2">Optimized for Any Device</h3>
+                                                <p class="font-size--15">No matter what device it is. Each of our themes is natively responsive, resizing your content and images to fit any device or screen width. You can also adjust them in your way.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &#x3C;div class=&#x22;card&#x22;&#x3E;
+                                        &#x3C;img class=&#x22;card-img-top&#x22; src=&#x22;img/blog-post-1.jpg&#x22; alt=&#x22;Card image cap&#x22;&#x3E;
+                                        &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+                                            &#x3C;h5 class=&#x22;card-title&#x22;&#x3E;...&#x3C;/h5&#x3E;
+                                            &#x3C;p class=&#x22;card-text pb-3&#x22;&#x3E;...&#x3C;/p&#x3E;
+                                            &#x3C;a href=&#x22;#&#x22; class=&#x22;btn btn-primary&#x22;&#x3E;...&#x3C;/a&#x3E;
+                                        &#x3C;/div&#x3E;
+                                    &#x3C;/div&#x3E;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-1-2">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Variation Two</h4>
+                                <hr>
+                                <div class="container mx-0">                                
+                                    <div class="row mb-4">
+                                        <!-- Start of Card 1 -->
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="card box-shadow--3 card-hover--3d border--none mb-3">
+                                                <a href="#"><img src="img/news-1.jpg" class="card-img-top" alt="news"></a>
+                                                <div class="card-body d-flex flex-column px-2">
+                                                    <span class="font-size--14 text-color--400 mb-1">13rd July, 2019</span>
+                                                    <a href="#" class="card-title text-hover--primary h6-font font-w--500 text-color--700 mb-0">Computer Hardware Desktops And Notebooks.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Card 1 -->
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &lt;div class=&quot;col-12 col-md-6 col-xl-3&quot;&gt;
+                                            &lt;div class=&quot;card box-shadow--3 card-hover--3d border--none mb-3&quot;&gt;
+                                                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;img/news-1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;news&quot;&gt;&lt;/a&gt;
+                                                &lt;div class=&quot;card-body d-flex flex-column px-2&quot;&gt;
+                                                    &lt;span class=&quot;font-size--14 text-color--400 mb-1&quot;&gt;...&lt;/span&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;card-title text-hover--primary h6-font font-w--500 text-color--700 mb-0&quot;&gt;...&lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-1-3">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Variation Three</h4>
+                                <hr>
+                                <div class="container mx-0">
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-sm-6 col-lg-5 col-xl-4 mb-3 mb-sm-0">
+                                            <div class="card card-hover--shadow border--none box-shadow--3 bg-color--primary color--white align-items-center pt-5 pb-6 px-4">
+                                                <span class="label label--lg label-bg--light--100 font-w--400 mb-5">Storage</span>
+                                                <span class="icon--9x mb-3"><i class="icon icon-server-rack"></i></span>
+                                                <span class="h2-font font-w--700 mb-1">$ 0.015</span>
+                                                <span class="h6-font font-w--700">Per GB Per Month</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &lt;div class=&quot;col-12 col-sm-6 col-lg-5 col-xl-4 mb-3 mb-sm-0&quot;&gt;
+                                            &lt;div class=&quot;card card-hover--shadow border--none box-shadow--3 bg-color--primary color--white align-items-center pt-5 pb-6 px-4&quot;&gt;
+                                                &lt;span class=&quot;label label--lg label-bg--light--100 font-w--400 mb-5&quot;&gt;...&lt;/span&gt;
+                                                &lt;span class=&quot;icon--9x mb-3&quot;&gt;&lt;i class=&quot;icon icon-server-rack&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                                                &lt;span class=&quot;h2-font font-w--700 mb-1&quot;&gt;...&lt;/span&gt;
+                                                &lt;span class=&quot;h6-font font-w--700&quot;&gt;...&lt;/span&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-1-4">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Variation Four</h4>
+                                <hr>
+                                <div class="container mx-0">
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-sm-6 col-lg-5 col-xl-5 mb-3 mb-sm-0">
+                                            <div class="card--v2">
+                                                <div class="card border--none flex-row align-items-end mb-3 jsElementFocus reveal focused">
+                                                    <div class="card-body py-5 pl-4 pr-1">
+                                                        <a href="#" class="card__title h4-font font-w--700 mb-2">Onepager</a>
+                                                        <p class="font-size--16">White papers are published on the Web and in print by researchers, organization vendors and consultants.</p>
+                                                    </div>
+                                                    <a href="#" class="icon--md bg-color--green rounded-circle color--white m-2">
+                                                        <i class="icon icon-data-download"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of focued card -->
+
+                                        <div class="col-12 col-sm-6 col-lg-5 col-xl-5 mb-3 mb-sm-0">
+                                            <div class="card--v2">
+                                                <div class="card border--none flex-row align-items-end mb-3 jsElementFocus reveal">
+                                                    <div class="card-body py-5 pl-4 pr-1">
+                                                        <a href="#" class="card__title h4-font font-w--700 mb-2">Whitepaper</a>
+                                                        <p class="font-size--16">White papers are published on the Web and in print by researchers, organization vendors and consultants.</p>
+                                                    </div>
+                                                    <a href="#" class="icon--md bg-color--green rounded-circle color--white m-2">
+                                                        <i class="icon icon-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of none focused card -->
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;col-12 col-sm-6 col-lg-5 col-xl-5 mb-3 mb-sm-0&quot;&gt;
+                                            &lt;div class=&quot;card--v2&quot;&gt;
+                                                &lt;div class=&quot;card border--none flex-row align-items-end mb-3 jsElementFocus reveal focused&quot;&gt;
+                                                    &lt;div class=&quot;card-body py-5 pl-4 pr-1&quot;&gt;
+                                                        &lt;a href=&quot;#&quot; class=&quot;card__title h4-font font-w--700 mb-2&quot;&gt;...&lt;/a&gt;
+                                                        &lt;p class=&quot;font-size--16&quot;&gt;...&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;icon--md bg-color--green rounded-circle color--white m-2&quot;&gt;
+                                                        &lt;i class=&quot;icon icon-data-download&quot;&gt;&lt;/i&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- end of focued card --&gt;
+
+                                        &lt;div class=&quot;col-12 col-sm-6 col-lg-5 col-xl-5 mb-3 mb-sm-0&quot;&gt;
+                                            &lt;div class=&quot;card--v2&quot;&gt;
+                                                &lt;div class=&quot;card border--none flex-row align-items-end mb-3 jsElementFocus reveal&quot;&gt;
+                                                    &lt;div class=&quot;card-body py-5 pl-4 pr-1&quot;&gt;
+                                                        &lt;a href=&quot;#&quot; class=&quot;card__title h4-font font-w--700 mb-2&quot;&gt;...&lt;/a&gt;
+                                                        &lt;p class=&quot;font-size--16&quot;&gt;...&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;icon--md bg-color--green rounded-circle color--white m-2&quot;&gt;
+                                                        &lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- end of none focused card --&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-1-5">
+                            <div class="p-3" >
+                                <h4 class="h5-font mb-2">Variation Five</h4>
+                                <hr>
+                                <div class="container mx-0">
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-sm-6 col-lg-5 col-xl-4 mb-3 mb-sm-0">
+                                            <div class="card--v3">
+                                                <div class="card bg-color--primary rounded--05 box-shadow--6 px-3 pt-5 pb-3">
+                                                    <div class="card-body">
+                                                        <span class="font-size--60 mb-2 color--white">
+                                                            <i class="icon icon-contacts"></i>
+                                                        </span>
+                                                        <h3 class="font-size--30 font-w--700 mb-2"><a href="#" class="color--white" tabindex="0">Smart <br> Contracts</a></h3>
+                                                        <p class="mb-3 font-size--20 opacity--80">Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend.</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <a href="#" class="font-size--26 color--white" tabindex="0"><i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;col-12 col-sm-6 col-lg-5 col-xl-4 mb-3 mb-sm-0&quot;&gt;
+                                            &lt;div class=&quot;card--v3&quot;&gt;
+                                                &lt;div class=&quot;card bg-color--primary rounded--05 box-shadow--6 px-3 pt-5 pb-3&quot;&gt;
+                                                    &lt;div class=&quot;card-body&quot;&gt;
+                                                        &lt;span class=&quot;font-size--60 mb-2 color--white&quot;&gt;
+                                                            &lt;i class=&quot;icon icon-contacts&quot;&gt;&lt;/i&gt;
+                                                        &lt;/span&gt;
+                                                        &lt;h3 class=&quot;font-size--30 font-w--700 mb-2&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;color--white&quot; tabindex=&quot;0&quot;&gt;...&lt;/a&gt;&lt;/h3&gt;
+                                                        &lt;p class=&quot;mb-3 font-size--20 opacity--80&quot;&gt;...&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class=&quot;card-footer&quot;&gt;
+                                                        &lt;a href=&quot;#&quot; class=&quot;font-size--26 color--white&quot; tabindex=&quot;0&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-1-6">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Variation Six</h4>
+                                <hr>
+                                <div class="container mx-0">
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-sm-6 col-lg-5 col-xl-3 mb-3 mb-sm-0">
+                                            <div class="card border--none bg-white text-center box-shadow--4 py-4 px-2 d-flex align-items-center card-hover--shadow-3d">
+                                                <span class="icon--lg color--primary bg-color--primary-opacity--10 rounded--full mb-2"> <i class="icon icon-key"></i> </span>
+                                                <h3 class="h5-font font-w--700 mb-1">Access</h3>
+                                                <p class="font-size--16">If you are looking at blank cassettes on the web, you may be very confused at the price.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;col-12 col-sm-6 col-lg-5 col-xl-3 mb-3 mb-sm-0&quot;&gt;
+                                            &lt;div class=&quot;card border--none bg-white text-center box-shadow--4 py-4 px-2 d-flex align-items-center card-hover--shadow-3d&quot;&gt;
+                                                &lt;span class=&quot;icon--lg color--primary bg-color--primary-opacity--10 rounded--full mb-2&quot;&gt; &lt;i class=&quot;icon icon-key&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                                &lt;h3 class=&quot;h5-font font-w--700 mb-1&quot;&gt;...&lt;/h3&gt;
+                                                &lt;p class=&quot;font-size--16&quot;&gt;...&lt;/p&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-1-7">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Variation Seven</h4>
+                                <hr>
+                                <div class="container mx-0">
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-sm-6 col-xl-6 mb-3 mb-sm-0">
+                                            <div class="card card--full-image position-relative">
+                                                <img src="img/news-8.jpg" alt="news" class="card-img">
+                                                <div class="card-body d-flex flex-column p-3 px-lg-4 py-lg-3 pos-abs-bottom">
+                                                    <span class="font-size--14 color--white mb-1">13rd July, 2019</span>
+                                                    <a href="#" class="card-title h5-font color--white font-w--500 mb-0">Facts Why Inkjet Printing Is Very Appealing Compared To Ordinary Printing.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;card card--full-image position-relative&quot;&gt;
+                                                &lt;img src=&quot;img/news-8.jpg&quot; alt=&quot;news&quot; class=&quot;card-img&quot;&gt;
+                                                &lt;div class=&quot;card-body d-flex flex-column p-3 px-lg-4 py-lg-3 pos-abs-bottom&quot;&gt;
+                                                    &lt;span class=&quot;font-size--14 color--white mb-1&quot;&gt;13rd July, 2019&lt;/span&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;card-title h5-font color--white font-w--500 mb-0&quot;&gt;...&lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-1-8">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Variation Eight</h4>
+                                <hr>
+                                <div class="container mx-0">
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
+                                            <div class="card max-w--350 mx-auto">
+                                                <div class="d-flex flex-column align-items-center justify-content-center text-center p-3">
+                                                    <span class="color--primary font-size--60">
+                                                        <i class="icon icon-plant-vase-2"></i>
+                                                    </span>
+                                                    <span class="font-size--20 font-w--600 text-color--700">
+                                                        Getting started
+                                                    </span>
+                                                </div>
+                                                <div class="list-group list-group-flush">
+                                                    <a href="#" class="list-group-item text-color--400">File structure</a>
+                                                    <a href="#" class="list-group-item text-color--400">NPM and Gulp</a>
+                                                    <a href="#" class="list-group-item text-color--400">Updating the colors</a>
+                                                </div>
+                                                <div class="card-body py-2">
+                                                    <a href="#" class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <i class="icon icon-folder-17 color--primary mr-1"></i>
+                                                            <span class="text-color--700 font-size--18 font-w--500">37 topics</span>
+                                                        </div>
+                                                        <i class="icon icon-small-right arrow_right color--primary"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0&quot;&gt;
+                                            &lt;div class=&quot;card max-w--350 mx-auto&quot;&gt;
+                                                &lt;div class=&quot;d-flex flex-column align-items-center justify-content-center text-center p-3&quot;&gt;
+                                                    &lt;span class=&quot;color--primary font-size--60&quot;&gt;
+                                                        &lt;i class=&quot;icon icon-plant-vase-2&quot;&gt;&lt;/i&gt;
+                                                    &lt;/span&gt;
+                                                    &lt;span class=&quot;font-size--20 font-w--600 text-color--700&quot;&gt;
+                                                        Getting started
+                                                    &lt;/span&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;list-group list-group-flush&quot;&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;list-group-item text-color--400&quot;&gt;File structure&lt;/a&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;list-group-item text-color--400&quot;&gt;NPM and Gulp&lt;/a&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;list-group-item text-color--400&quot;&gt;Updating the colors&lt;/a&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;card-body py-2&quot;&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;d-flex justify-content-between align-items-center&quot;&gt;
+                                                        &lt;div&gt;
+                                                            &lt;i class=&quot;icon icon-folder-17 color--primary mr-1&quot;&gt;&lt;/i&gt;
+                                                            &lt;span class=&quot;text-color--700 font-size--18 font-w--500&quot;&gt;37 topics&lt;/span&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;i class=&quot;icon icon-small-right arrow_right color--primary&quot;&gt;&lt;/i&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-1-9">
+                            <div class="p-3">
+                                <h4 class="h5-font mb-2">Variation Nine</h4>
+                                <hr>
+                                <div class="container mx-0">
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
+                                            <div class="article">
+                                                <div class="card">
+                                                    <div class="article__thumbnail">
+                                                        <div class="article__thumbnail-image" style="background-image: url(&quot;img/blog-page-img-3.jpg&quot;); background-repeat: no-repeat; height: 202.203px;">
+                                                            <img src="img/blog-page-img-3.jpg" alt="thumbnail" class="card-img-top background-image-holder" style="display: none;">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end of image -->
+                                                    <div class="article-author">
+                                                        <a href="#" class="article-author__avatar" style="background-image: url(&quot;img/author-avatar-3.png&quot;); background-repeat: no-repeat;">
+                                                                <img src="img/author-avatar-3.png" class="background-image-holder" alt="author" style="display: none;">
+                                                            </a>
+                                                        <div>
+                                                            <a href="#" class="article-author__name">Sam Tyler</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end of author avatar & name -->
+                                                    <div class="card-body">
+                                                        <a href="#" class="article__title">
+                                                            <h2>5 tips for offshore software development</h2>
+                                                        </a>
+                                                        <span class="article__date">25 Aug 2018</span>
+                                                    </div>
+                                                    <!-- end of body content -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &lt;div class=&quot;article&quot;&gt;
+                                            &lt;div class=&quot;card&quot;&gt;
+                                                &lt;div class=&quot;article__thumbnail&quot;&gt;
+                                                    &lt;div class=&quot;article__thumbnail-image&quot; style=&quot;background-image: url(&amp;quot;img/blog-page-img-3.jpg&amp;quot;); background-repeat: no-repeat; height: 202.203px;&quot;&gt;
+                                                        &lt;img src=&quot;img/blog-page-img-3.jpg&quot; alt=&quot;thumbnail&quot; class=&quot;card-img-top background-image-holder&quot; style=&quot;display: none;&quot;&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;!-- end of image --&gt;
+                                                &lt;div class=&quot;article-author&quot;&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;article-author__avatar&quot; style=&quot;background-image: url(&amp;quot;img/author-avatar-3.png&amp;quot;); background-repeat: no-repeat;&quot;&gt;
+                                                            &lt;img src=&quot;img/author-avatar-3.png&quot; class=&quot;background-image-holder&quot; alt=&quot;author&quot; style=&quot;display: none;&quot;&gt;
+                                                        &lt;/a&gt;
+                                                    &lt;div&gt;
+                                                        &lt;a href=&quot;#&quot; class=&quot;article-author__name&quot;&gt;Sam Tyler&lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;!-- end of author avatar &amp; name --&gt;
+                                                &lt;div class=&quot;card-body&quot;&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;article__title&quot;&gt;
+                                                        &lt;h2&gt;5 tips for offshore software development&lt;/h2&gt;
+                                                    &lt;/a&gt;
+                                                    &lt;span class=&quot;article__date&quot;&gt;25 Aug 2018&lt;/span&gt;
+                                                &lt;/div&gt;
+                                                &lt;!-- end of body content --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="box-shadow--3 mb-3 rounded--05" id="item-2">
+                            <div class="bg-color--primary-light--1 p-2 border-bottom border--top">
+                                <h3 class="h4-font ">SpaceMax Card Hover</h3>
+                            </div>
+                            <!-- end of title -->
+                            <div class="p-3" id="item-2-1">
+                                <div class="container mx-0">                                
+                                    <div class="row mb-4">
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="card box-shadow--3 card-hover--3d border--none mb-3">
+                                                <a href="#"><img src="img/news-1.jpg" class="card-img-top" alt="news"></a>
+                                                <div class="card-body d-flex flex-column px-2">
+                                                    <span class="font-size--14 text-color--400 mb-1">13rd July, 2019</span>
+                                                    <a href="#" class="card-title text-hover--primary h6-font font-w--500 text-color--700 mb-0">Card 3D Hover</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of 3D Hover -->
+
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="card box-shadow--3 card-hover--shadow border--none mb-3">
+                                                <a href="#"><img src="img/news-1.jpg" class="card-img-top" alt="news"></a>
+                                                <div class="card-body d-flex flex-column px-2">
+                                                    <span class="font-size--14 text-color--400 mb-1">13rd July, 2019</span>
+                                                    <a href="#" class="card-title text-hover--primary h6-font font-w--500 text-color--700 mb-0">Box Shadow Hover.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of Box Shadow Hover -->
+
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="card box-shadow--3 card-hover--shadow-3d border--none mb-3">
+                                                <a href="#"><img src="img/news-1.jpg" class="card-img-top" alt="news"></a>
+                                                <div class="card-body d-flex flex-column px-2">
+                                                    <span class="font-size--14 text-color--400 mb-1">13rd July, 2019</span>
+                                                    <a href="#" class="card-title text-hover--primary h6-font font-w--500 text-color--700 mb-0">3D with Shadow Hover.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of Box 3D+Shadow Hover -->
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;div class=&quot;col-12 col-md-6 col-xl-3&quot;&gt;
+                                            &lt;div class=&quot;card box-shadow--3 card-hover--3d border--none mb-3&quot;&gt;
+                                                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;img/news-1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;news&quot;&gt;&lt;/a&gt;
+                                                &lt;div class=&quot;card-body d-flex flex-column px-2&quot;&gt;
+                                                    &lt;span class=&quot;font-size--14 text-color--400 mb-1&quot;&gt;...&lt;/span&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;card-title text-hover--primary h6-font font-w--500 text-color--700 mb-0&quot;&gt;...&lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- end of 3D Hover --&gt;
+
+                                        &lt;div class=&quot;col-12 col-md-6 col-xl-3&quot;&gt;
+                                            &lt;div class=&quot;card box-shadow--3 card-hover--shadow border--none mb-3&quot;&gt;
+                                                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;img/news-1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;news&quot;&gt;&lt;/a&gt;
+                                                &lt;div class=&quot;card-body d-flex flex-column px-2&quot;&gt;
+                                                    &lt;span class=&quot;font-size--14 text-color--400 mb-1&quot;&gt;...&lt;/span&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;card-title text-hover--primary h6-font font-w--500 text-color--700 mb-0&quot;&gt;...&lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- end of Box Shadow Hover --&gt;
+
+                                        &lt;div class=&quot;col-12 col-md-6 col-xl-3&quot;&gt;
+                                            &lt;div class=&quot;card box-shadow--3 card-hover--shadow-3d border--none mb-3&quot;&gt;
+                                                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;img/news-1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;news&quot;&gt;&lt;/a&gt;
+                                                &lt;div class=&quot;card-body d-flex flex-column px-2&quot;&gt;
+                                                    &lt;span class=&quot;font-size--14 text-color--400 mb-1&quot;&gt;...&lt;/span&gt;
+                                                    &lt;a href=&quot;#&quot; class=&quot;card-title text-hover--primary h6-font font-w--500 text-color--700 mb-0&quot;&gt;...&lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- end of Box 3D+Shadow Hover --&gt;
+                                    </code></pre>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05" id="item-3">
+                            <div class="card flex-row flex-wrap">
+                                <div class="card-body">
+                                    <h6 class="mb-1">Class Reference</h6>
+                                    <hr>
+                                    <dl class="row justfiy-content-between">
+                                        <dt class="col-4"><code>.card-hover--3d</code>
+                                    </dl>
+                                    <dl class="row justfiy-content-between">
+                                        <dt class="col-4"><code>.card-hover--shadow</code>
+                                    </dl>
+                                    <dl class="row justfiy-content-between">
+                                        <dt class="col-4"><code>.card-hover--shadow-3d</code>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

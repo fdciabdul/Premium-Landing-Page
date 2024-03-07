@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceMax - Pie & Bar chart</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- fonts and icons -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+    <!-- =========== Start of Sidebar ============ -->
+   <!-- =========== Start of Sidebar ============ -->
+   <aside class="sidebar-nav">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color-black.png" alt="brand-logo" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item active"><a href="chart.html" class="nav-link">Chart</a></li>
+                        <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li></li>
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="dropdown.html" class="nav-link">Dropdown Module</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player Buttons</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                            <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                        
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Template Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="template-options.html" class="nav-link">SpaceMaxtemplate options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- =========== End of  Sidebar ============ -->
+
+    <!-- =========== Start of Right Sidebar ============ -->
+    <nav class="navbar navbar-light sidebar" id="sidebar">
+        <div class="inner">
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Pie Chart</a>
+                <a class="nav-link" href="#item-2">Bar Chart</a>
+            </nav>
+        </div>
+    </nav>
+    <!-- =========== End of Right Sidebar ============ -->
+
+    <main class="main documentation section--light">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1">
+                        <!-- Getting started -->
+                        <div class="content-title mb-3 pb-3 border-bottom">
+                            <h1 class="h3-font mb-1">Pie and Bar Chart</h1>
+                            <p class="lead font-w--400">SpaceMax used highcharts JavaScript library for the 3D pie chart. And other two are custom but very easy to use.</p>
+                        </div>
+
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05 p-4 section--dark bg-color--dark--1" id="item-1">
+                            <h3 class="pb-2 mb-5 h4-font text-center">Pie Chart</h3>
+                            <div class="pie-chart--flat mx-auto" id="pie-chart--v1"></div>
+
+                            <h3 class="mt-3 h6-font">Markup example:</h3>
+                            <div class="highlight mt-3">
+                                <pre><code class="language-html" data-lang="html">
+                                    &lt;div class=&quot;pie-chart--flat&quot; id=&quot;pie-chart--v1&quot;&gt;&lt;/div&gt;
+                                </code></pre>
+                            </div>
+
+                            <h3 class="mt-3 h6-font">JS initialization and updating the data:</h3>
+                            <p>You will find the code in <code>js/app.js</code> file.</p>
+
+                            <div class="highlight mt-3">
+                                <pre><code class="language-js" data-lang="js">
+                                        if ($(&quot;#pie-chart--v1&quot;).length &gt; 0) {
+                                            $(&quot;#pie-chart--v1&quot;).drawDoughnutChart([{
+                                                    title: &quot;Token sale participants&quot;,
+                                                    value: 40,
+                                                    color: &quot;#3260ED&quot;
+                                                },
+                                                {
+                                                    title: &quot;Founders and project team&quot;,
+                                                    value: 30,
+                                                    color: &quot;#8CA8FF&quot;
+                                                },
+                                                {
+                                                    title: &quot;Project partners&quot;,
+                                                    value: 15,
+                                                    color: &quot;#B6BD00&quot;
+                                                },
+                                                {
+                                                    title: &quot;Operational fund within the project&quot;,
+                                                    value: 6,
+                                                    color: &quot;#D65800&quot;
+                                                },
+                                                {
+                                                    title: &quot;Project consultation&quot;,
+                                                    value: 5,
+                                                    color: &quot;#FFB755&quot;
+                                                },
+                                                {
+                                                    title: &quot;Bounty company&quot;,
+                                                    value: 4,
+                                                    color: &quot;#F23C42&quot;
+                                                },
+                                            ]);
+                                        }
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="box-shadow--3 p-3 mb-3 rounded--05 p-4 section--dark bg-color--dark--1" id="item-2">
+                            <h3 class="pb-2 mb-5 h4-font text-center">Bar Chart</h3>
+                            <div class="bar-chart--v1 d-flex position-relative">
+                                <div class="bar-portion jsElement" data-bg-color="#8ca8ff" data-width="40%">
+                                    <span data-tooltip="">Core phase of tokens sale 40%</span>
+                                </div>
+
+                                <div class="bar-portion jsElement" data-bg-color="#3260ed" data-width="25%">
+                                    <span data-tooltip="">Partners and advisors 25%</span>
+                                </div>
+
+                                <div class="bar-portion jsElement" data-bg-color="#b6bd00" data-width="20%">
+                                    <span data-tooltip="">Project partners 20%</span>
+                                </div>
+
+                                <div class="bar-portion jsElement" data-bg-color="#d65800" data-width="10%">
+                                    <span data-tooltip="">Operational fund within the project 10%</span>
+                                </div>
+
+                                <div class="bar-portion jsElement" data-bg-color="#ffb755" data-width="5%">
+                                    <span data-tooltip="">Project consultation 5%</span>
+                                </div>
+                            </div>
+
+
+                            <h3 class="mt-3  h6-font">Markup example:</h3>
+                            <div class="highlight mt-3">
+                                <pre><code class="language-html" data-lang="html">
+                                        &lt;div class=&quot;bar-chart--v1 position-relative d-flex &quot;&gt;
+                                        &lt;div class=&quot;bar-portion jsElement&quot; data-bg-color=&quot;#8ca8ff&quot; data-width=&quot;40%&quot;&gt;
+                                            &lt;span data-tooltip=&quot;&quot;&gt;Core phase of tokens sale 40%&lt;/span&gt;
+                                        &lt;/div&gt;
+        
+                                        &lt;div class=&quot;bar-portion jsElement&quot; data-bg-color=&quot;#3260ed&quot; data-width=&quot;25%&quot;&gt;
+                                            &lt;span data-tooltip=&quot;&quot;&gt;Partners and advisors 25%&lt;/span&gt;
+                                        &lt;/div&gt;
+        
+                                        &lt;div class=&quot;bar-portion jsElement&quot; data-bg-color=&quot;#b6bd00&quot; data-width=&quot;20%&quot;&gt;
+                                            &lt;span data-tooltip=&quot;&quot;&gt;Project partners 20%&lt;/span&gt;
+                                        &lt;/div&gt;
+        
+                                        &lt;div class=&quot;bar-portion jsElement&quot; data-bg-color=&quot;#d65800&quot; data-width=&quot;10%&quot;&gt;
+                                            &lt;span data-tooltip=&quot;&quot;&gt;Operational fund within the project 10%&lt;/span&gt;
+                                        &lt;/div&gt;
+        
+                                        &lt;div class=&quot;bar-portion jsElement&quot; data-bg-color=&quot;#ffb755&quot; data-width=&quot;5%&quot;&gt;
+                                            &lt;span data-tooltip=&quot;&quot;&gt;Project consultation 5%&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                        </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
